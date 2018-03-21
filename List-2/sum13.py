@@ -10,18 +10,21 @@ sum13([1, 2, 2, 1, 13]) → 6
 '''
 
 def sum13(nums):
- res = 0  
+    res = 0  
 
- if len(nums) == 0:
-  return 0
+    if len(nums) == 0:
+        return 0
  
- else:
- 
-  for i in range(len(nums)):
-   if nums[i] != 13:
-    res = res + nums[i]
+    else:
+        
+        i = 0
+        while i<len(nums):
+            if nums[i] == 13:
+                i +=1
+    
+            else:
+                res = res + nums[i]
   
-   else:
-     res = 0
- 
- return res   
+            i +=1
+            print(i)
+    return res   
