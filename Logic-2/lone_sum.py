@@ -13,12 +13,12 @@ def lone_sum(a, b, c):
  res = 0
  
  if a!=b and a!=c:
-  res = a
+  res +=a
   
-  if b!=c:
-   return res + b + c
- 
-  elif b==c:
-   return res + b
+ if a!=b and b!=c:
+  res +=b 
   
- return res    
+ if a!=c and b!=c:
+  res +=c
+  
+ return res      

@@ -1,6 +1,8 @@
 '''
 
-Given 2 arrays of ints, a and b, return True if they have the same first element or they have the same last element. Both arrays will be length 1 or more.
+Given 2 arrays of ints, a and b, return True if they have the 
+same first element or they have the same last element. 
+Both arrays will be length 1 or more.
 
 
 common_end([1, 2, 3], [7, 3]) → True
@@ -11,7 +13,7 @@ common_end([1, 2, 3], [1, 3]) → True
 
 def common_end(a, b):
   
- if len(a)>0 and len(b)>0 and (a[0]==b[0]) or (a[len[a]-1]==b[len[b]-1]):
-  return True
+    if a[0]==b[0] or a[len(a)-1]==b[len(b)-1]:
+        return True
    
- return False
+    return False
