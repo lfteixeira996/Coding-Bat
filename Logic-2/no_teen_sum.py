@@ -9,5 +9,25 @@ no_teen_sum(2, 1, 14) → 3
 
 '''
 
+def fix_teen(n):
+    
+    if n>=10 and n<=19 and n!=15 and n!=16:
+        return False
+    
+    return True
+        
+
 def no_teen_sum(a, b, c):
   
+    count = 0
+    
+    if(fix_teen(a) == True):
+        count += a        
+        
+    if(fix_teen(b) == True):
+        count += b   
+        
+    if(fix_teen(c) == True):
+        count += c    
+        
+    return count 
