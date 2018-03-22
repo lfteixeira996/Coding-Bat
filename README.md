@@ -2,6 +2,7 @@
 My resolutions of codingbat Python and Java exercises
 
 Python: http://codingbat.com/python
+
 Java:   http://codingbat.com/java
 
 
