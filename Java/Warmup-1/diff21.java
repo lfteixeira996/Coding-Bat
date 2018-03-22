@@ -1,4 +1,6 @@
 package test;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
 /*
@@ -15,31 +17,38 @@ diff21(21) → 0
 public class diff21 {
 
 	@Test
-	public void myTest()
+	public void Test1()
 	{
 		/*Test 1*/
 		System.out.println("**********Test 1**********");
 		int actual = diff21(19);
-		System.out.println("Calculate diff21(19)");
-		System.out.println("Expected: "+ 2);
-		System.out.println("Received: "+ actual+'\n');
-		
-		/*Test 2*/
-		System.out.println("**********Test 2**********");
-		actual = diff21(10);
-		System.out.println("Calculate diff21(11)");
-		System.out.println("Expected: "+ 11);
-		System.out.println("Received: "+ actual+'\n');
-		
-		/*Test 3*/
-		System.out.println("**********Test 3**********");
-		actual = diff21(21);
-		System.out.println("Calculate diff21(0)");
-		System.out.println("Expected: "+ 0);
-		System.out.println("Received: "+ actual+'\n');
+		System.out.println("Calculate diff21(19)\n");
+		assertEquals("diff21(19) = 2", 2, diff21(19));
 	}
 
+	@Test
+	public void Test2()
+	{
+		/*Test 2*/
+		System.out.println("**********Test 2**********");
+		int actual = diff21(10);
+		System.out.println("Calculate diff21(10)\n");
+		assertEquals("diff21(10) = 11", 11, diff21(10));
+	}
 	
+	@Test
+	public void Test3()
+	{
+		/*Test 3*/
+		System.out.println("**********Test 3**********");
+		int actual = diff21(21);
+		System.out.println("Calculate diff21(21)\n");
+		assertEquals("diff21(21) = 2", 0, diff21(21));
+	}
+	
+	
+	
+	/*********************************************************/
 	public int diff21(int n) {
 		if (n > 21) {
 			return Math.abs(n-21)*2;			

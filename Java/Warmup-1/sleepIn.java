@@ -1,4 +1,6 @@
 package test;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
 /*
@@ -18,30 +20,37 @@ sleepIn(false, true) → true
 public class sleepIn {
 
 	@Test
-	public void myTest()
+	public void Test1()
 	{
 		/*Test 1*/
 		System.out.println("**********Test 1**********");
 		boolean actual = sleepIn(false, false);
-		System.out.println("Calculate sleepIn(false, false)");
-		System.out.println("Expected: "+ true);
-		System.out.println("Received: "+ actual+'\n');
-		
-		/*Test 2*/
-		System.out.println("**********Test 2**********");
-		actual = sleepIn(true, false);
-		System.out.println("Calculate sleepIn(true, false)");
-		System.out.println("Expected: "+ false);
-		System.out.println("Received: "+ actual+'\n');
-		
-		/*Test 3*/
-		System.out.println("**********Test 3**********");
-		actual = sleepIn(false, true);
-		System.out.println("Calculate sleepIn(false, true)");
-		System.out.println("Expected: "+ true);
-		System.out.println("Received: "+ actual+'\n');			
+		System.out.println("Calculate sleepIn(false, false)\n");	
+		assertEquals("sleepIn(false, false) = true", true, actual);
 	}
 
+	@Test
+	public void Test2()
+	{
+		/*Test 2*/
+		System.out.println("**********Test 2**********");
+		boolean actual = sleepIn(true, false);
+		System.out.println("Calculate sleepIn(true, false)\n");	
+		assertEquals("sleepIn(true, false) = false", false, actual);
+	}
+	
+	@Test
+	public void Test3()
+	{
+		/*Test 3*/
+		System.out.println("**********Test 3**********");
+		boolean actual = sleepIn(false, true);
+		System.out.println("Calculate sleepIn(false, true)\n");	
+		assertEquals("sleepIn(false, true) = true", true, actual);
+	}
+	
+	
+	/*********************************************************/
 	public boolean sleepIn(boolean weekday, boolean vacation) {
 		
 		if (weekday==false )
