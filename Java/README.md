@@ -4,4 +4,4 @@
 
 #### JUnit Tutorial can be find in: http://www.vogella.com/tutorials/JUnit/article.html
 
-![picture](junit5-banner.png
+![picture](junit5-banner.png)
