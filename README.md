@@ -1,7 +1,8 @@
 # Coding-Bat
-My resolutions of codingbat Python exercises
+My resolutions of codingbat Python and Java exercises
 
-website: http://codingbat.com/python
+Python: http://codingbat.com/python
+Java:   http://codingbat.com/java
 
 
 # About CodingBat
