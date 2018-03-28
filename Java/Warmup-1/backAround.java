@@ -1,4 +1,11 @@
-package test;
+/**
+ * @author Luis Teixeira
+ *
+ * @date   28/03/2018
+ *
+ * @mail   filipe.teixeira.996@gmail.com
+ */
+package Warmup_1;
 
 import static org.junit.Assert.assertEquals;
 
@@ -22,7 +29,6 @@ public class backAround{
 	{
 		/*Test 1*/
 		System.out.println("**********Test 1**********");
-		String actual = backAround("cat");
 		System.out.println("Calculate backAround(\"cat\")\n");
 		assertEquals("backAround(\"cat\") = \"tcatt\"", "tcatt", backAround("cat"));
 	}
@@ -32,7 +38,6 @@ public class backAround{
 	{
 		/*Test 2*/
 		System.out.println("**********Test 2**********");
-		String actual = backAround("Hello");
 		System.out.println("Calculate backAround(\"Hello\")\n");
 		assertEquals("backAround(\"Hello\") = \"oHelloo\"", "oHelloo", backAround("Hello"));
 	}
@@ -42,7 +47,6 @@ public class backAround{
 	{
 		/*Test 3*/
 		System.out.println("**********Test 3**********");
-		String actual = backAround("a");
 		System.out.println("Calculate backAround(\"a\")\n");
 		assertEquals("backAround(\"a\") = \"aaa\"", "aaa", backAround("a"));
 	}

@@ -1,6 +1,16 @@
-package test;
+/**
+ * @author Luis Teixeira
+ *
+ * @date   28/03/2018
+ *
+ * @mail   filipe.teixeira.996@gmail.com
+ */
+package Warmup_1;
 
 import static org.junit.Assert.assertEquals;
+
+import java.awt.font.NumericShaper.Range;
+
 import org.junit.Test;
 
 /*
@@ -14,6 +24,7 @@ hasTeen(20, 10, 13) → true
 */
 
 public class hasTeen{
+	
 	
 	@Test
 	public void Test1()

@@ -1,4 +1,11 @@
-package test;
+/**
+ * @author Luis Teixeira
+ *
+ * @date   28/03/2018
+ *
+ * @mail   filipe.teixeira.996@gmail.com
+ */
+package Warmup_1;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;

@@ -1,4 +1,11 @@
-package test;
+/**
+ * @author Luis Teixeira
+ *
+ * @date   28/03/2018
+ *
+ * @mail   filipe.teixeira.996@gmail.com
+ */
+package Warmup_1;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
@@ -22,7 +29,6 @@ public class close10{
 	{
 		/*Test 1*/
 		System.out.println("**********Test 1**********");
-		int actual = close10(8, 13);
 		System.out.println("Calculate close10(8, 13)\n");
 		assertEquals("close10(8, 13) = 8", 8, close10(8, 13));
 	}
@@ -32,7 +38,6 @@ public class close10{
 	{
 		/*Test 2*/
 		System.out.println("**********Test 2**********");
-		int actual = close10(13, 8);
 		System.out.println("Calculate close10(13, 8)\n");
 		assertEquals("close10(13, 8) = 8", 8, close10(13, 8));
 	}
@@ -42,7 +47,6 @@ public class close10{
 	{
 		/*Test 3*/
 		System.out.println("**********Test 3**********");
-		int actual = close10(13, 7);
 		System.out.println("Calculate close10(13, 7)\n");
 		assertEquals("close10(13, 7) = 0", 0, close10(13, 7));
 	}

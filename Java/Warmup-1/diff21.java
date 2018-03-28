@@ -1,4 +1,11 @@
-package test;
+/**
+ * @author Luis Teixeira
+ *
+ * @date   28/03/2018
+ *
+ * @mail   filipe.teixeira.996@gmail.com
+ */
+package Warmup_1;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
@@ -21,7 +28,6 @@ public class diff21 {
 	{
 		/*Test 1*/
 		System.out.println("**********Test 1**********");
-		int actual = diff21(19);
 		System.out.println("Calculate diff21(19)\n");
 		assertEquals("diff21(19) = 2", 2, diff21(19));
 	}
@@ -31,7 +37,6 @@ public class diff21 {
 	{
 		/*Test 2*/
 		System.out.println("**********Test 2**********");
-		int actual = diff21(10);
 		System.out.println("Calculate diff21(10)\n");
 		assertEquals("diff21(10) = 11", 11, diff21(10));
 	}
@@ -41,7 +46,6 @@ public class diff21 {
 	{
 		/*Test 3*/
 		System.out.println("**********Test 3**********");
-		int actual = diff21(21);
 		System.out.println("Calculate diff21(21)\n");
 		assertEquals("diff21(21) = 2", 0, diff21(21));
 	}
