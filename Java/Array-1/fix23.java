@@ -8,7 +8,6 @@
 package Array_1;
 
 import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 /*
@@ -57,9 +56,17 @@ public class fix23 {
 		i++;
 	}
 	
-	
 	public int[] fix23(int[] nums) {
-		  
+		  		
+		for (int i = 0; i < nums.length; i++) {
+			if (nums[i] == 2 && nums[++i] == 3) {
+				nums[++i] = 0;
+			}
+			
+			System.out.println(" " + nums[i]);
+		}
+		
+		return nums;
 	}
 
 }
