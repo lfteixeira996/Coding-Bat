@@ -57,6 +57,17 @@ public class theEnd {
 
 	public String theEnd(String str, boolean front) {
 		  
+		StringBuilder sb = new StringBuilder();
+		
+		if (front) {
+			sb.append(str.charAt(0));
+			return sb.toString();
+		}
+		
+		else {
+			sb.append(str.charAt(str.length()-1));
+			return sb.toString();
+		}
 	}
 
 }

@@ -51,11 +51,34 @@ public class lastChars {
 		assertEquals("lastChars(\"hi\", \"\") → \"h@\"", "h@", lastChars("hi", ""));
 		i++;
 	}
-	
-	
 
 	public String lastChars(String a, String b) {
 		  
+		char first;
+		char last;  
+		
+		if (a == "") {
+			first = '@';
+		}
+		
+		else {
+			first = a.charAt(0);
+		}
+		
+		if (b == "") {
+			last = '@';
+		}
+		
+		else {
+			last  = b.charAt(b.length()-1);
+		}
+		
+		StringBuilder sb = new StringBuilder();
+		sb.append(first);
+		sb.append(last);
+		
+		return  sb.toString();
+		
 	}
 
 }
