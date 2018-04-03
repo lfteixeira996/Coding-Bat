@@ -77,18 +77,19 @@ public class doubling {
 	{
 		System.out.println("**********Test "+i+"**********");
 		System.out.println("doubling([]) → []\n");
-//		num.add('');
-//		num.add('');
-		assertEquals("doubling([]) → []", expA, doubling(numA));
+
+		assertEquals("doubling([]) → []", exp, doubling(num));
 		i++;
 	}
 	
 	public List<Integer> doubling(List<Integer> nums) {
-		  
+		 
+		List<Integer> ret = new LinkedList<Integer>();
+		
 		for (int i = 0; i < nums.size(); i++) {	
-			nums.add(i, nums.get(i)*2); 
+			ret.add(i, nums.get(i)*2); 
 		}
 		
-		return nums;
+		return ret;
 	}
 }
