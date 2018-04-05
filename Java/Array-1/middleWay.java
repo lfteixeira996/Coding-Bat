@@ -29,8 +29,10 @@ public class middleWay {
 		System.out.println("middleWay([1, 2, 3], [4, 5, 6]) → [2, 5]\n");
 		int[] numA = {1, 2, 3};
 		int[] numB = {4, 5, 6};
-		int[] exp  = {2, 5};		
-		assertEquals("middleWay([1, 2, 3], [4, 5, 6]) → [2, 5]", exp, middleWay(numA, numB));
+		int[] exp  = {2, 5};	
+		
+		int[] rec = middleWay(numA, numB);
+		assertEquals("middleWay([1, 2, 3], [4, 5, 6]) → [2, 5]", exp, rec);
 		i++;
 	}
 	
