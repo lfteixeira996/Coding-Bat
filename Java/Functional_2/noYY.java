@@ -91,19 +91,14 @@ public class noYY {
 	public List<String> noYY(List<String> strings) {
 		  
 		List<String> ret = new LinkedList<String>();
-		int aux, x = 0;
+		String aux = null;	
 		
-		if (strings.size()<1) {
-			ret.add("y");
-		}
-				
 		for (int i = 0; i < strings.size(); i++) {
 			
-			aux = strings.get(i).length()-1;
+			aux = strings.get(i) + "y";
 			
-			if (strings.get(i).charAt(aux) != 'y' && !(strings.get(i).contains("yy"))) {
-				ret.add(x, strings.get(i)+"y");
-				x++;
+			if (!aux.contains("yy")) {
+				ret.add(aux);
 			}
 		}
 		
