@@ -1,10 +1,3 @@
-# Python 3
-
-#### Python documentation: https://docs.python.org/3/
-
-![picture](python_logo.png)
-
-
 ## Basic Example - Unit testing framework
 ```python
 import unittest
@@ -44,3 +37,8 @@ class Test_diff21(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main() 
 ``` 
+
+
+## Python 3 documentation: https://docs.python.org/3/
+
+![picture](python_logo.png)
