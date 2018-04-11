@@ -1,5 +1,6 @@
-'''
+import unittest
 
+'''
 Given an array of ints length 3, figure out which is larger, the first or last element in the array, and set all the other elements to be that value. Return the changed array.
 
 
@@ -23,3 +24,18 @@ def max_end3(nums):
   nums[i] = max  
 
  return nums  
+ 
+class Test_make_ends(unittest.TestCase):
+
+    def test_1(self):
+        self.assertEqual(make_ends([1, 2, 3]), [1, 3])
+
+    def test_2(self):
+        self.assertEqual(make_ends([1, 2, 3]), [1, 3])
+
+    def test_3(self):
+        self.assertEqual(make_ends([7, 4, 6, 2]), [7, 2])
+
+
+if __name__ == '__main__':
+    unittest.main()  

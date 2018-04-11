@@ -1,6 +1,6 @@
+import unittest
+
 '''
-
-
 Given a string and a non-negative int n, return a larger string that is n copies of the original string.
 
 
@@ -18,3 +18,19 @@ def string_times(str, n):
  
  elif n==0 or len(str)==0: 
   return "" 
+
+
+class Test_string_times(unittest.TestCase):
+
+    def test_1(self):
+        self.assertEqual(string_times('Hi', 2), 'HiHi')
+
+    def test_2(self):
+        self.assertEqual(string_times('Hi', 3),'HiHiHi')
+
+    def test_3(self):
+        self.assertEqual(string_times('Hi', 1), 'Hi')
+
+
+if __name__ == '__main__':
+    unittest.main() 

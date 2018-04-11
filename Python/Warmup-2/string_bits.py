@@ -1,6 +1,6 @@
+import unittest
+
 '''
-
-
 Given a string, return a new string made of every other char starting with the first, so "Hello" yields "Hlo".
 
 
@@ -20,3 +20,19 @@ def string_bits(str):
      result = result + str[i]
  return result 
 
+
+
+class Test_string_bits(unittest.TestCase):
+
+    def test_1(self):
+        self.assertEqual(string_bits('Hello'), 'Hlo')
+
+    def test_2(self):
+        self.assertEqual(string_bits('Hi'), 'H')
+
+    def test_3(self):
+        self.assertEqual(string_bits('Heeololeo'), 'Hello')
+
+
+if __name__ == '__main__':
+    unittest.main() 

@@ -1,3 +1,5 @@
+import unittest
+
 '''
 Given an int array length 2, return True if it contains a 2 or a 3.
 
@@ -17,3 +19,19 @@ def has23(nums):
   return True
  
  return False 
+ 
+ 
+class Test_has23(unittest.TestCase):
+
+    def test_1(self):
+        self.assertEqual(has23([2, 5]), True)
+
+    def test_2(self):
+        self.assertEqual(has23([4, 3]), True)
+
+    def test_3(self):
+        self.assertEqual(has23([4, 5]), False)
+
+
+if __name__ == '__main__':
+    unittest.main()  
