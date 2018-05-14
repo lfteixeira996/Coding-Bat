@@ -20,9 +20,9 @@ Given a list of strings, return a list of the strings,
 omitting any string that contains a "z". (Note: the str.contains(x) method returns a boolean)
 
 
-noZ(["aaa", "bbb", "aza"]) → ["aaa", "bbb"]
-noZ(["hziz", "hzello", "hi"]) → ["hi"]
-noZ(["hello", "howz", "are", "youz"]) → ["hello", "are"]
+noZ(["aaa", "bbb", "aza"]) --> ["aaa", "bbb"]
+noZ(["hziz", "hzello", "hi"]) --> ["hi"]
+noZ(["hello", "howz", "are", "youz"]) --> ["hello", "are"]
  */
 public class noZ {
 
@@ -34,7 +34,7 @@ public class noZ {
 	public void Test1()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("noZ([\"aaa\", \"bbb\", \"aza\"]) → [\"aaa\", \"bbb\"]\n");
+		System.out.println("noZ([\"aaa\", \"bbb\", \"aza\"]) --> [\"aaa\", \"bbb\"]\n");
 		
 		//actual
 		num.add("aaa");
@@ -45,7 +45,7 @@ public class noZ {
 		exp.add("aaa");
 		exp.add("bbb");
 		
-		assertEquals("noZ([\"aaa\", \"bbb\", \"aza\"]) → [\"aaa\", \"bbb\"]", exp, noZ(num));
+		assertEquals("noZ([\"aaa\", \"bbb\", \"aza\"]) --> [\"aaa\", \"bbb\"]", exp, noZ(num));
 		i++;
 	}
 
@@ -53,7 +53,7 @@ public class noZ {
 	public void Test2()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("noZ([\"hziz\", \"hzello\", \"hi\"]) → [\"hi\"]\n");
+		System.out.println("noZ([\"hziz\", \"hzello\", \"hi\"]) --> [\"hi\"]\n");
 		
 		//actual
 		num.add("hziz");
@@ -63,7 +63,7 @@ public class noZ {
 		//expected
 		exp.add("hi");
 		
-		assertEquals("noZ([\"hziz\", \"hzello\", \"hi\"]) → [\"hi\"]", exp, noZ(num));
+		assertEquals("noZ([\"hziz\", \"hzello\", \"hi\"]) --> [\"hi\"]", exp, noZ(num));
 		i++;
 	}
 	
@@ -71,7 +71,7 @@ public class noZ {
 	public void Test3()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("noZ([\"hello\", \"howz\", \"are\", \"youz\"]) → [\"hello\", \"are\"]\n");
+		System.out.println("noZ([\"hello\", \"howz\", \"are\", \"youz\"]) --> [\"hello\", \"are\"]\n");
 		
 		//actual
 		num.add("hello");
@@ -83,7 +83,7 @@ public class noZ {
 		exp.add("hello");
 		exp.add("are");
 				
-		assertEquals("noZ([\"hello\", \"howz\", \"are\", \"youz\"]) → [\"hello\", \"are\"]", exp, noZ(num));
+		assertEquals("noZ([\"hello\", \"howz\", \"are\", \"youz\"]) --> [\"hello\", \"are\"]", exp, noZ(num));
 		i++;
 	}
 	

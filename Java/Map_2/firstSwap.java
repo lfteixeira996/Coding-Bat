@@ -23,9 +23,9 @@ only cause 1 swap, so once a char has caused a swap, its later swaps are disable
 Using a map, this can be solved making just one pass over the array. More difficult than it looks.
 
 
-firstSwap(["ab", "ac"]) → ["ac", "ab"]
-firstSwap(["ax", "bx", "cx", "cy", "by", "ay", "aaa", "azz"]) → ["ay", "by", "cy", "cx", "bx", "ax", "aaa", "azz"]
-firstSwap(["ax", "bx", "ay", "by", "ai", "aj", "bx", "by"]) → ["ay", "by", "ax", "bx", "ai", "aj", "bx", "by"]
+firstSwap(["ab", "ac"]) --> ["ac", "ab"]
+firstSwap(["ax", "bx", "cx", "cy", "by", "ay", "aaa", "azz"]) --> ["ay", "by", "cy", "cx", "bx", "ax", "aaa", "azz"]
+firstSwap(["ax", "bx", "ay", "by", "ai", "aj", "bx", "by"]) --> ["ay", "by", "ax", "bx", "ai", "aj", "bx", "by"]
  */
 public class firstSwap {
 
@@ -35,7 +35,7 @@ public class firstSwap {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("firstSwap([\"ab\", \"ac\"]) → [\"ac\", \"ab\"]\n");
+		System.out.println("firstSwap([\"ab\", \"ac\"]) --> [\"ac\", \"ab\"]\n");
 
 		//Input array
 	    String[] input =  {"ab", "ac"};
@@ -51,7 +51,7 @@ public class firstSwap {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("firstSwap([\"ax\", \"bx\", \"cx\", \"cy\", \"by\", \"ay\", \"aaa\", \"azz\"]) → [\"ay\", \"by\", \"cy\", \"cx\", \"bx\", \"ax\", \"aaa\", \"azz\"]\n");
+		System.out.println("firstSwap([\"ax\", \"bx\", \"cx\", \"cy\", \"by\", \"ay\", \"aaa\", \"azz\"]) --> [\"ay\", \"by\", \"cy\", \"cx\", \"bx\", \"ax\", \"aaa\", \"azz\"]\n");
 
 		//Input array
 	    String[] input =  {"ax", "bx", "cx", "cy", "by", "ay", "aaa", "azz"};
@@ -67,7 +67,7 @@ public class firstSwap {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("firstSwap([\"ax\", \"bx\", \"ay\", \"by\", \"ai\", \"aj\", \"bx\", \"by\"]) → [\"ay\", \"by\", \"ax\", \"bx\", \"ai\", \"aj\", \"bx\", \"by\"]\n");
+		System.out.println("firstSwap([\"ax\", \"bx\", \"ay\", \"by\", \"ai\", \"aj\", \"bx\", \"by\"]) --> [\"ay\", \"by\", \"ax\", \"bx\", \"ai\", \"aj\", \"bx\", \"by\"]\n");
 
 		//Input array
 	    String[] input =  {"ax", "bx", "ay", "by", "ai", "aj", "bx", "by"};

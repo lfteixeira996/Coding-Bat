@@ -21,9 +21,9 @@ that have different lengths, then set "c" to have the longer value.
 If the values exist and have the same length, change them both to the empty string in the map.
 
 
-mapAB4({"a": "aaa", "b": "bb", "c": "cake"}) → {"a": "aaa", "b": "bb", "c": "aaa"}
-mapAB4({"a": "aa", "b": "bbb", "c": "cake"}) → {"a": "aa", "b": "bbb", "c": "bbb"}
-mapAB4({"a": "aa", "b": "bbb"}) → {"a": "aa", "b": "bbb", "c": "bbb"}
+mapAB4({"a": "aaa", "b": "bb", "c": "cake"}) --> {"a": "aaa", "b": "bb", "c": "aaa"}
+mapAB4({"a": "aa", "b": "bbb", "c": "cake"}) --> {"a": "aa", "b": "bbb", "c": "bbb"}
+mapAB4({"a": "aa", "b": "bbb"}) --> {"a": "aa", "b": "bbb", "c": "bbb"}
  */
 public class mapAB4 {
 
@@ -33,7 +33,7 @@ public class mapAB4 {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("mapAB4({\"a\": \"aaa\", \"b\": \"bb\", \"c\": \"cake\"}) → {\"a\": \"aaa\", \"b\": \"bb\", \"c\": \"aaa\"}\n");
+		System.out.println("mapAB4({\"a\": \"aaa\", \"b\": \"bb\", \"c\": \"cake\"}) --> {\"a\": \"aaa\", \"b\": \"bb\", \"c\": \"aaa\"}\n");
 
 		//Input map
 	    Map map	=	new HashMap();  
@@ -56,7 +56,7 @@ public class mapAB4 {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("mapAB4({\"a\": \"aa\", \"b\": \"bbb\", \"c\": \"cake\"}) → {\"a\": \"aa\", \"b\": \"bbb\", \"c\": \"bbb\"}\n");
+		System.out.println("mapAB4({\"a\": \"aa\", \"b\": \"bbb\", \"c\": \"cake\"}) --> {\"a\": \"aa\", \"b\": \"bbb\", \"c\": \"bbb\"}\n");
 
 		//Input map
 	    Map map	=	new HashMap();  
@@ -79,7 +79,7 @@ public class mapAB4 {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("mapAB4({\"a\": \"aa\", \"b\": \"bbb\"}) → {\"a\": \"aa\", \"b\": \"bbb\", \"c\": \"bbb\"}\n");
+		System.out.println("mapAB4({\"a\": \"aa\", \"b\": \"bbb\"}) --> {\"a\": \"aa\", \"b\": \"bbb\", \"c\": \"bbb\"}\n");
 
 		//Input map
 	    Map map	=	new HashMap();  

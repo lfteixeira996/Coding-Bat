@@ -19,9 +19,9 @@ The two arrays are not empty and are the same length. Return the score for this 
 giving +4 for each correct answer, -1 for each incorrect answer, and +0 for each blank answer.
 
 
-scoreUp(["a", "a", "b", "b"], ["a", "c", "b", "c"]) → 6
-scoreUp(["a", "a", "b", "b"], ["a", "a", "b", "c"]) → 11
-scoreUp(["a", "a", "b", "b"], ["a", "a", "b", "b"]) → 16
+scoreUp(["a", "a", "b", "b"], ["a", "c", "b", "c"]) --> 6
+scoreUp(["a", "a", "b", "b"], ["a", "a", "b", "c"]) --> 11
+scoreUp(["a", "a", "b", "b"], ["a", "a", "b", "b"]) --> 16
  */
 public class scoreUp {
 
@@ -31,10 +31,10 @@ public class scoreUp {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"c\", \"b\", \"c\"]) → 6\n");
+		System.out.println("scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"c\", \"b\", \"c\"]) --> 6\n");
 		String[] inputA = {"a", "a", "b", "b"};
 		String[] inputB = {"a", "c", "b", "c"};		
-		assertEquals("scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"c\", \"b\", \"c\"]) → 6", 6, scoreUp(inputA, inputB));
+		assertEquals("scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"c\", \"b\", \"c\"]) --> 6", 6, scoreUp(inputA, inputB));
 		i++;
 	}
 
@@ -42,10 +42,10 @@ public class scoreUp {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"a\", \"b\", \"c\"]) → 11\n");
+		System.out.println("scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"a\", \"b\", \"c\"]) --> 11\n");
 		String[] inputA = {"a", "a", "b", "b"};
 		String[] inputB = {"a", "a", "b", "c"};		
-		assertEquals("scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"a\", \"b\", \"c\"]) → 11", 11, scoreUp(inputA, inputB));
+		assertEquals("scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"a\", \"b\", \"c\"]) --> 11", 11, scoreUp(inputA, inputB));
 		i++;
 	}
 	
@@ -53,10 +53,10 @@ public class scoreUp {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"a\", \"b\", \"b\"]) → 16\n");
+		System.out.println("scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"a\", \"b\", \"b\"]) --> 16\n");
 		String[] inputA = {"a", "a", "b", "b"};
 		String[] inputB = {"a", "a", "b", "b"};		
-		assertEquals("scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"a\", \"b\", \"b\"]) → 16", 16, scoreUp(inputA, inputB));
+		assertEquals("scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"a\", \"b\", \"b\"]) --> 16", 16, scoreUp(inputA, inputB));
 		i++;
 	}
 	

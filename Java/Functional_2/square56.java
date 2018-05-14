@@ -18,9 +18,9 @@ import org.junit.Test;
 
 Given a list of integers, return a list of those numbers squared and the product added to 10, omitting any of the resulting numbers that end in 5 or 6.
 
-square56([3, 1, 4]) → [19, 11]
-square56([1]) → [11]
-square56([2]) → [14]
+square56([3, 1, 4]) --> [19, 11]
+square56([1]) --> [11]
+square56([2]) --> [14]
  */
 public class square56 {
 
@@ -32,7 +32,7 @@ public class square56 {
 	public void Test1()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("square56([3, 1, 4]) → [19, 11]\n");
+		System.out.println("square56([3, 1, 4]) --> [19, 11]\n");
 		
 		//actual
 		num.add(3);
@@ -43,7 +43,7 @@ public class square56 {
 		exp.add(19);
 		exp.add(11);
 		
-		assertEquals("square56([3, 1, 4]) → [19, 11]", exp, square56(num));
+		assertEquals("square56([3, 1, 4]) --> [19, 11]", exp, square56(num));
 		i++;
 	}
 
@@ -51,7 +51,7 @@ public class square56 {
 	public void Test2()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("square56([1]) → [11]\n");
+		System.out.println("square56([1]) --> [11]\n");
 		
 		//actual
 		num.add(1);
@@ -59,7 +59,7 @@ public class square56 {
 		//expected
 		exp.add(11);
 		
-		assertEquals("square56([1]) → [11]", exp, square56(num));
+		assertEquals("square56([1]) --> [11]", exp, square56(num));
 		i++;
 	}
 	
@@ -67,7 +67,7 @@ public class square56 {
 	public void Test3()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("square56([2]) → [14]\n");
+		System.out.println("square56([2]) --> [14]\n");
 		
 		//actual
 		num.add(2);
@@ -75,7 +75,7 @@ public class square56 {
 		//expected
 		exp.add(14);
 		
-		assertEquals("square56([2]) → [14]", exp, square56(num));
+		assertEquals("square56([2]) --> [14]", exp, square56(num));
 		i++;
 	}
 	

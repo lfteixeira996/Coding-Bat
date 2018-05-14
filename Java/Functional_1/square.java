@@ -18,9 +18,9 @@ import org.junit.Test;
 Given a list of integers, return a list where each integer is multiplied with itself.
 
 
-square([1, 2, 3]) → [1, 4, 9]
-square([6, 8, -6, -8, 1]) → [36, 64, 36, 64, 1]
-square([]) → []
+square([1, 2, 3]) --> [1, 4, 9]
+square([6, 8, -6, -8, 1]) --> [36, 64, 36, 64, 1]
+square([]) --> []
  */
 public class square {
 
@@ -30,7 +30,7 @@ public class square {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("square([1, 2, 3]) → [1, 4, 9]\n");
+		System.out.println("square([1, 2, 3]) --> [1, 4, 9]\n");
 		
 		List<Integer> inputA = new ArrayList<Integer>();
 		inputA.add(1);
@@ -43,7 +43,7 @@ public class square {
 		outputA.add(4);
 		outputA.add(9);
 				
-		assertEquals("square([1, 2, 3]) → [1, 4, 9]", outputA, square(inputA));
+		assertEquals("square([1, 2, 3]) --> [1, 4, 9]", outputA, square(inputA));
 		i++;
 	}
 	
@@ -51,7 +51,7 @@ public class square {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("square([6, 8, -6, -8, 1]) → [36, 64, 36, 64, 1]\n");
+		System.out.println("square([6, 8, -6, -8, 1]) --> [36, 64, 36, 64, 1]\n");
 		
 		List<Integer> inputA = new ArrayList<Integer>();
 		inputA.add(6);
@@ -68,7 +68,7 @@ public class square {
 		outputA.add(64);
 		outputA.add(1);
 				
-		assertEquals("square([6, 8, -6, -8, 1]) → [36, 64, 36, 64, 1]", outputA, square(inputA));
+		assertEquals("square([6, 8, -6, -8, 1]) --> [36, 64, 36, 64, 1]", outputA, square(inputA));
 		i++;
 	}
 
@@ -76,13 +76,13 @@ public class square {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("square([]) → []\n");
+		System.out.println("square([]) --> []\n");
 		
 		List<Integer> inputA = new ArrayList<Integer>();
 	
 		List<Integer> outputA = new ArrayList<Integer>();
 				
-		assertEquals("square([]) → []", outputA, square(inputA));
+		assertEquals("square([]) --> []", outputA, square(inputA));
 		i++;
 	}
 	

@@ -19,9 +19,9 @@ import org.junit.Test;
 Given a list of non-negative integers, return an integer list of the rightmost digits. (Note: use %)
 
 
-rightDigit([1, 22, 93]) → [1, 2, 3]
-rightDigit([16, 8, 886, 8, 1]) → [6, 8, 6, 8, 1]
-rightDigit([10, 0]) → [0, 0]
+rightDigit([1, 22, 93]) --> [1, 2, 3]
+rightDigit([16, 8, 886, 8, 1]) --> [6, 8, 6, 8, 1]
+rightDigit([10, 0]) --> [0, 0]
  */
 public class rightDigit {
 
@@ -31,7 +31,7 @@ public class rightDigit {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("rightDigit([1, 22, 93]) → [1, 2, 3]\n");
+		System.out.println("rightDigit([1, 22, 93]) --> [1, 2, 3]\n");
 		
 		List<Integer> inputA = new ArrayList<Integer>();
 		inputA.add(1);
@@ -44,7 +44,7 @@ public class rightDigit {
 		outputA.add(2);
 		outputA.add(3);
 				
-		assertEquals("rightDigit([1, 22, 93]) → [1, 2, 3]", outputA, rightDigit(inputA));
+		assertEquals("rightDigit([1, 22, 93]) --> [1, 2, 3]", outputA, rightDigit(inputA));
 		i++;
 	}
 
@@ -52,7 +52,7 @@ public class rightDigit {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("rightDigit([16, 8, 886, 8, 1]) → [6, 8, 6, 8, 1]\n");
+		System.out.println("rightDigit([16, 8, 886, 8, 1]) --> [6, 8, 6, 8, 1]\n");
 		
 		List<Integer> inputA = new ArrayList<Integer>();
 		inputA.add(16);
@@ -69,7 +69,7 @@ public class rightDigit {
 		outputA.add(8);
 		outputA.add(1);
 				
-		assertEquals("rightDigit([16, 8, 886, 8, 1]) → [6, 8, 6, 8, 1]", outputA, rightDigit(inputA));
+		assertEquals("rightDigit([16, 8, 886, 8, 1]) --> [6, 8, 6, 8, 1]", outputA, rightDigit(inputA));
 		i++;
 	}
 	
@@ -77,7 +77,7 @@ public class rightDigit {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("rightDigit([10, 0]) → [0, 0]\n");
+		System.out.println("rightDigit([10, 0]) --> [0, 0]\n");
 		
 		List<Integer> inputA = new ArrayList<Integer>();
 		inputA.add(10);
@@ -87,7 +87,7 @@ public class rightDigit {
 		outputA.add(0);
 		outputA.add(0);
 				
-		assertEquals("rightDigit([10, 0]) → [0, 0]", outputA, rightDigit(inputA));
+		assertEquals("rightDigit([10, 0]) --> [0, 0]", outputA, rightDigit(inputA));
 		i++;
 	}
 	

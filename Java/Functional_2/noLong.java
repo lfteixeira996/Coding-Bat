@@ -19,9 +19,9 @@ import org.junit.Test;
 Given a list of strings, return a list of the strings, omitting any string length 4 or more.
 
 
-noLong(["this", "not", "too", "long"]) → ["not", "too"]
-noLong(["a", "bbb", "cccc"]) → ["a", "bbb"]
-noLong(["cccc", "cccc", "cccc"]) → []
+noLong(["this", "not", "too", "long"]) --> ["not", "too"]
+noLong(["a", "bbb", "cccc"]) --> ["a", "bbb"]
+noLong(["cccc", "cccc", "cccc"]) --> []
  */
 public class noLong {
 
@@ -33,7 +33,7 @@ public class noLong {
 	public void Test1()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("noLong([\"this\", \"not\", \"too\", \"long\"]) → [\"not\", \"too\"]\n");
+		System.out.println("noLong([\"this\", \"not\", \"too\", \"long\"]) --> [\"not\", \"too\"]\n");
 		
 		//actual
 		num.add("this");
@@ -45,7 +45,7 @@ public class noLong {
 		exp.add("not");
 		exp.add("too");
 		
-		assertEquals("noLong([\"this\", \"not\", \"too\", \"long\"]) → [\"not\", \"too\"]", exp, noLong(num));
+		assertEquals("noLong([\"this\", \"not\", \"too\", \"long\"]) --> [\"not\", \"too\"]", exp, noLong(num));
 		i++;
 	}
 
@@ -53,7 +53,7 @@ public class noLong {
 	public void Test2()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("noLong([\"a\", \"bbb\", \"cccc\"]) → [\"a\", \"bbb\"]\n");
+		System.out.println("noLong([\"a\", \"bbb\", \"cccc\"]) --> [\"a\", \"bbb\"]\n");
 		
 		//actual
 		num.add("a");
@@ -64,7 +64,7 @@ public class noLong {
 		exp.add("a");
 		exp.add("bbb");
 		
-		assertEquals("noLong([\"a\", \"bbb\", \"cccc\"]) → [\"a\", \"bbb\"]", exp, noLong(num));
+		assertEquals("noLong([\"a\", \"bbb\", \"cccc\"]) --> [\"a\", \"bbb\"]", exp, noLong(num));
 		i++;
 	}
 	
@@ -72,7 +72,7 @@ public class noLong {
 	public void Test3()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("noLong([\"cccc\", \"cccc\", \"cccc\"]) → []\n");
+		System.out.println("noLong([\"cccc\", \"cccc\", \"cccc\"]) --> []\n");
 		
 		//actual
 		num.add("cccc");
@@ -82,7 +82,7 @@ public class noLong {
 		//expected
 		exp.add("");
 		
-		assertEquals("noLong([\"cccc\", \"cccc\", \"cccc\"]) → []", exp, noLong(num));
+		assertEquals("noLong([\"cccc\", \"cccc\", \"cccc\"]) --> []", exp, noLong(num));
 		i++;
 	}
 	

@@ -19,9 +19,9 @@ Given a list of strings, return a list where each string
 has "y" added at its end, omitting any resulting strings that contain "yy" as a substring anywhere.
 
 
-noYY(["a", "b", "c"]) → ["ay", "by", "cy"]
-noYY(["a", "b", "cy"]) → ["ay", "by"]
-noYY(["xx", "ya", "zz"]) → ["xxy", "yay", "zzy"]
+noYY(["a", "b", "c"]) --> ["ay", "by", "cy"]
+noYY(["a", "b", "cy"]) --> ["ay", "by"]
+noYY(["xx", "ya", "zz"]) --> ["xxy", "yay", "zzy"]
  */
 public class noYY {
 
@@ -33,7 +33,7 @@ public class noYY {
 	public void Test1()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("noYY([\"a\", \"b\", \"c\"]) → [\"ay\", \"by\", \"cy\"]\n");
+		System.out.println("noYY([\"a\", \"b\", \"c\"]) --> [\"ay\", \"by\", \"cy\"]\n");
 		
 		//actual
 		num.add("a");
@@ -45,7 +45,7 @@ public class noYY {
 		exp.add("by");
 		exp.add("cy");
 
-		assertEquals("noYY([\"a\", \"b\", \"c\"]) → [\"ay\", \"by\", \"cy\"]", exp, noYY(num));
+		assertEquals("noYY([\"a\", \"b\", \"c\"]) --> [\"ay\", \"by\", \"cy\"]", exp, noYY(num));
 		i++;
 	}
 
@@ -53,7 +53,7 @@ public class noYY {
 	public void Test2()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("noYY([\"a\", \"b\", \"cy\"]) → [\"ay\", \"by\"]\n");
+		System.out.println("noYY([\"a\", \"b\", \"cy\"]) --> [\"ay\", \"by\"]\n");
 		
 		//actual
 		num.add("a");
@@ -64,7 +64,7 @@ public class noYY {
 		exp.add("ay");
 		exp.add("by");
 
-		assertEquals("noYY([\"a\", \"b\", \"cy\"]) → [\"ay\", \"by\"]", exp, noYY(num));
+		assertEquals("noYY([\"a\", \"b\", \"cy\"]) --> [\"ay\", \"by\"]", exp, noYY(num));
 		i++;
 	}
 	
@@ -72,7 +72,7 @@ public class noYY {
 	public void Test3()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("noYY([\"xx\", \"ya\", \"zz\"]) → [\"xxy\", \"yay\", \"zzy\"]\n");
+		System.out.println("noYY([\"xx\", \"ya\", \"zz\"]) --> [\"xxy\", \"yay\", \"zzy\"]\n");
 		
 		//actual
 		num.add("xx");
@@ -84,7 +84,7 @@ public class noYY {
 		exp.add("yay");
 		exp.add("zzy");
 		
-		assertEquals("noYY([\"xx\", \"ya\", \"zz\"]) → [\"xxy\", \"yay\", \"zzy\"]", exp, noYY(num));
+		assertEquals("noYY([\"xx\", \"ya\", \"zz\"]) --> [\"xxy\", \"yay\", \"zzy\"]", exp, noYY(num));
 		i++;
 	}
 	

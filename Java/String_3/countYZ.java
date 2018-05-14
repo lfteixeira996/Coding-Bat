@@ -19,9 +19,9 @@ We'll say that a y or z is at the end of a word if there is not an alphabetic le
 immediately following it. (Note: Character.isLetter(char) tests if a char is an alphabetic letter.)
 
 
-countYZ("fez day") → 2
-countYZ("day fez") → 2
-countYZ("day fyyyz") → 2
+countYZ("fez day") --> 2
+countYZ("day fez") --> 2
+countYZ("day fyyyz") --> 2
  */
 public class countYZ {
 
@@ -31,8 +31,8 @@ public class countYZ {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("countYZ(\"fez day\") → 2\n");
-		assertEquals("countYZ(\"fez day\") → 2", 2, countYZ("fez day"));
+		System.out.println("countYZ(\"fez day\") --> 2\n");
+		assertEquals("countYZ(\"fez day\") --> 2", 2, countYZ("fez day"));
 		i++;
 	}
 	
@@ -40,8 +40,8 @@ public class countYZ {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("countYZ(\"day fez\") → 2\n");
-		assertEquals("countYZ(\"day fez\") → 2", 2, countYZ("day fez"));
+		System.out.println("countYZ(\"day fez\") --> 2\n");
+		assertEquals("countYZ(\"day fez\") --> 2", 2, countYZ("day fez"));
 		i++;
 	}
 	
@@ -49,8 +49,8 @@ public class countYZ {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("countYZ(\"day fyyyz\") → 2\n");
-		assertEquals("countYZ(\"day fyyyz\") → 2", 2, countYZ("day fyyyz"));
+		System.out.println("countYZ(\"day fyyyz\") --> 2\n");
+		assertEquals("countYZ(\"day fyyyz\") --> 2", 2, countYZ("day fyyyz"));
 		i++;
 	}
 	

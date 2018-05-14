@@ -17,9 +17,9 @@ there is another 'g' immediately to its left or right.
 Return true if all the g's in the given string are happy.
 
 
-gHappy("xxggxx") → true
-gHappy("xxgxx") → false
-gHappy("xxggyygxx") → false
+gHappy("xxggxx") --> true
+gHappy("xxgxx") --> false
+gHappy("xxggyygxx") --> false
  */
 public class gHappy {
 
@@ -29,8 +29,8 @@ public class gHappy {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("gHappy(\"xxggxx\") → true\n");
-		assertEquals("gHappy(\"xxggxx\") → true", true, gHappy("xxggxx"));
+		System.out.println("gHappy(\"xxggxx\") --> true\n");
+		assertEquals("gHappy(\"xxggxx\") --> true", true, gHappy("xxggxx"));
 		i++;
 	}
 	
@@ -38,8 +38,8 @@ public class gHappy {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("gHappy(\"xxgxx\") → false\n");
-		assertEquals("gHappy(\"xxgxx\") → false", false, gHappy("xxgxx"));
+		System.out.println("gHappy(\"xxgxx\") --> false\n");
+		assertEquals("gHappy(\"xxgxx\") --> false", false, gHappy("xxgxx"));
 		i++;
 	}
 	
@@ -47,8 +47,8 @@ public class gHappy {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("gHappy(\"xxggyygxx\") → false\n");
-		assertEquals("gHappy(\"xxggyygxx\") → false", false, gHappy("xxggyygxx"));
+		System.out.println("gHappy(\"xxggyygxx\") --> false\n");
+		assertEquals("gHappy(\"xxggyygxx\") --> false", false, gHappy("xxggyygxx"));
 		i++;
 	}
 	

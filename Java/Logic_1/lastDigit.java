@@ -17,9 +17,9 @@ Given three ints, a b c, return true if two or more of them have the same rightm
 The ints are non-negative. Note: the % "mod" operator computes the remainder, e.g. 17 % 10 is 7.
 
 
-lastDigit(23, 19, 13) → true
-lastDigit(23, 19, 12) → false
-lastDigit(23, 19, 3) → true 
+lastDigit(23, 19, 13) --> true
+lastDigit(23, 19, 12) --> false
+lastDigit(23, 19, 3) --> true 
  */
 public class lastDigit {
 
@@ -29,7 +29,7 @@ public class lastDigit {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("lastDigit(23, 19, 13) → true\n");
+		System.out.println("lastDigit(23, 19, 13) --> true\n");
 		assertEquals(true, lastDigit(23, 19, 13));
 	    i++;
 	}
@@ -38,7 +38,7 @@ public class lastDigit {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("lastDigit(23, 19, 12) → false\n");
+		System.out.println("lastDigit(23, 19, 12) --> false\n");
 		assertEquals(false, lastDigit(23, 19, 12));
 	    i++;
 	}
@@ -47,7 +47,7 @@ public class lastDigit {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("lastDigit(23, 19, 3) → true\n");
+		System.out.println("lastDigit(23, 19, 3) --> true\n");
 		assertEquals(true, lastDigit(23, 19, 3));
 	    i++;
 	}

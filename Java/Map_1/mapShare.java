@@ -20,9 +20,9 @@ set the key "b" to have that same value. In all cases remove the key "c",
 leaving the rest of the map unchanged.
 
 
-mapShare({"a": "aaa", "b": "bbb", "c": "ccc"}) → {"a": "aaa", "b": "aaa"}
-mapShare({"b": "xyz", "c": "ccc"}) → {"b": "xyz"}
-mapShare({"a": "aaa", "c": "meh", "d": "hi"}) → {"a": "aaa", "b": "aaa", "d": "hi"}
+mapShare({"a": "aaa", "b": "bbb", "c": "ccc"}) --> {"a": "aaa", "b": "aaa"}
+mapShare({"b": "xyz", "c": "ccc"}) --> {"b": "xyz"}
+mapShare({"a": "aaa", "c": "meh", "d": "hi"}) --> {"a": "aaa", "b": "aaa", "d": "hi"}
  */
 public class mapShare {
 
@@ -32,7 +32,7 @@ public class mapShare {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("mapShare({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"ccc\"}) → {\"a\": \"aaa\", \"b\": \"aaa\"}\n");
+		System.out.println("mapShare({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"ccc\"}) --> {\"a\": \"aaa\", \"b\": \"aaa\"}\n");
 
 		//Input map
 	    Map map	=	new HashMap();  
@@ -52,7 +52,7 @@ public class mapShare {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("mapShare({\"b\": \"xyz\", \"c\": \"ccc\"}) → {\"b\": \"xyz\"}\n");
+		System.out.println("mapShare({\"b\": \"xyz\", \"c\": \"ccc\"}) --> {\"b\": \"xyz\"}\n");
 
 		//Input map
 	    Map map	=	new HashMap();    
@@ -70,7 +70,7 @@ public class mapShare {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("mapShare({\"a\": \"aaa\", \"c\": \"meh\", \"d\": \"hi\"}) → {\"a\": \"aaa\", \"b\": \"aaa\", \"d\": \"hi\"}\n");
+		System.out.println("mapShare({\"a\": \"aaa\", \"c\": \"meh\", \"d\": \"hi\"}) --> {\"a\": \"aaa\", \"b\": \"aaa\", \"d\": \"hi\"}\n");
 
 		//Input map
 	    Map map	=	new HashMap();    

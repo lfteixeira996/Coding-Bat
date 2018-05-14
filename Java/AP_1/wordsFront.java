@@ -16,9 +16,9 @@ import org.junit.Test;
 Given an array of strings, return a new array containing the first N strings. N will be in the range 1..length.
 
 
-wordsFront(["a", "b", "c", "d"], 1) → ["a"]
-wordsFront(["a", "b", "c", "d"], 2) → ["a", "b"]
-wordsFront(["a", "b", "c", "d"], 3) → ["a", "b", "c"]
+wordsFront(["a", "b", "c", "d"], 1) --> ["a"]
+wordsFront(["a", "b", "c", "d"], 2) --> ["a", "b"]
+wordsFront(["a", "b", "c", "d"], 3) --> ["a", "b", "c"]
  */
 public class wordsFront {
 
@@ -28,10 +28,10 @@ public class wordsFront {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("wordsFront([\"a\", \"b\", \"c\", \"d\"], 1) → [\"a\"]\n");
+		System.out.println("wordsFront([\"a\", \"b\", \"c\", \"d\"], 1) --> [\"a\"]\n");
 		String[] inputA = {"a", "b", "c", "d"};
 		String[] outputA = {"a"};		
-		assertEquals("wordsFront([\"a\", \"b\", \"c\", \"d\"], 1) → [\"a\"]", outputA, wordsFront(inputA, 1));
+		assertEquals("wordsFront([\"a\", \"b\", \"c\", \"d\"], 1) --> [\"a\"]", outputA, wordsFront(inputA, 1));
 		i++;
 	}
 
@@ -39,10 +39,10 @@ public class wordsFront {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("wordsFront([\"a\", \"b\", \"c\", \"d\"], 2) → [\"a\", \"b\"]\n");
+		System.out.println("wordsFront([\"a\", \"b\", \"c\", \"d\"], 2) --> [\"a\", \"b\"]\n");
 		String[] inputA = {"a", "b", "c", "d"};
 		String[] outputA = {"a", "b"};		
-		assertEquals("wordsFront([\"a\", \"b\", \"c\", \"d\"], 2) → [\"a\", \"b\"]", outputA, wordsFront(inputA, 2));
+		assertEquals("wordsFront([\"a\", \"b\", \"c\", \"d\"], 2) --> [\"a\", \"b\"]", outputA, wordsFront(inputA, 2));
 		i++;
 	}
 	
@@ -50,10 +50,10 @@ public class wordsFront {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("wordsFront([\"a\", \"b\", \"c\", \"d\"], 3) → [\"a\", \"b\", \"c\"]\n");
+		System.out.println("wordsFront([\"a\", \"b\", \"c\", \"d\"], 3) --> [\"a\", \"b\", \"c\"]\n");
 		String[] inputA = {"a", "b", "c", "d"};
 		String[] outputA = {"a", "b", "c"};		
-		assertEquals("wordsFront([\"a\", \"b\", \"c\", \"d\"], 3) → [\"a\", \"b\", \"c\"]", outputA, wordsFront(inputA, 3));
+		assertEquals("wordsFront([\"a\", \"b\", \"c\", \"d\"], 3) --> [\"a\", \"b\", \"c\"]", outputA, wordsFront(inputA, 3));
 		i++;
 	}
 	

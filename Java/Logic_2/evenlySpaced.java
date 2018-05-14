@@ -18,9 +18,9 @@ Return true if the three values are evenly spaced, so the difference between
 small and medium is the same as the difference between medium and large.
 
 
-evenlySpaced(2, 4, 6) → true
-evenlySpaced(4, 6, 2) → true
-evenlySpaced(4, 6, 3) → false
+evenlySpaced(2, 4, 6) --> true
+evenlySpaced(4, 6, 2) --> true
+evenlySpaced(4, 6, 3) --> false
  */
 public class evenlySpaced {
 
@@ -30,8 +30,8 @@ public class evenlySpaced {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("evenlySpaced(2, 4, 6) → true\n");
-		assertEquals("evenlySpaced(2, 4, 6) → true", true, evenlySpaced(2, 4, 6));
+		System.out.println("evenlySpaced(2, 4, 6) --> true\n");
+		assertEquals("evenlySpaced(2, 4, 6) --> true", true, evenlySpaced(2, 4, 6));
 		i++;
 	}
 
@@ -39,8 +39,8 @@ public class evenlySpaced {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("evenlySpaced(4, 6, 2) → true\n");
-		assertEquals("evenlySpaced(4, 6, 2) → true", true, evenlySpaced(4, 6, 2));
+		System.out.println("evenlySpaced(4, 6, 2) --> true\n");
+		assertEquals("evenlySpaced(4, 6, 2) --> true", true, evenlySpaced(4, 6, 2));
 		i++;
 	}
 	
@@ -48,8 +48,8 @@ public class evenlySpaced {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("evenlySpaced(4, 6, 3) → false\n");
-		assertEquals("evenlySpaced(4, 6, 3) → false", false, evenlySpaced(4, 6, 3));
+		System.out.println("evenlySpaced(4, 6, 3) --> false\n");
+		assertEquals("evenlySpaced(4, 6, 3) --> false", false, evenlySpaced(4, 6, 3));
 		i++;
 	}
 	

@@ -18,9 +18,9 @@ import org.junit.Test;
 Given a list of non-negative integers, return a list of those numbers except omitting any that end with 9. (Note: % by 10)
 
 
-no9([1, 2, 19]) → [1, 2]
-no9([9, 19, 29, 3]) → [3]
-no9([1, 2, 3]) → [1, 2, 3]
+no9([1, 2, 19]) --> [1, 2]
+no9([9, 19, 29, 3]) --> [3]
+no9([1, 2, 3]) --> [1, 2, 3]
  */
 public class no9 {
 
@@ -32,7 +32,7 @@ public class no9 {
 	public void Test1()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("no9([1, 2, 19]) → [1, 2]\n");
+		System.out.println("no9([1, 2, 19]) --> [1, 2]\n");
 		
 		//actual
 		num.add(1);
@@ -43,7 +43,7 @@ public class no9 {
 		exp.add(1);
 		exp.add(2);
 		
-		assertEquals("no9([1, 2, 19]) → [1, 2]", exp, no9(num));
+		assertEquals("no9([1, 2, 19]) --> [1, 2]", exp, no9(num));
 		i++;
 	}
 	
@@ -51,7 +51,7 @@ public class no9 {
 	public void Test2()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("no9([9, 19, 29, 3]) → [3]\n");
+		System.out.println("no9([9, 19, 29, 3]) --> [3]\n");
 		
 		//actual
 		num.add(9);
@@ -62,7 +62,7 @@ public class no9 {
 		//expected
 		exp.add(3);
 		
-		assertEquals("no9([9, 19, 29, 3]) → [3]", exp, no9(num));
+		assertEquals("no9([9, 19, 29, 3]) --> [3]", exp, no9(num));
 		i++;
 	}
 
@@ -70,7 +70,7 @@ public class no9 {
 	public void Test3()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("no9([1, 2, 3]) → [1, 2, 3]\n");
+		System.out.println("no9([1, 2, 3]) --> [1, 2, 3]\n");
 		
 		//actual
 		num.add(1);
@@ -82,7 +82,7 @@ public class no9 {
 		exp.add(2);
 		exp.add(3);
 		
-		assertEquals("no9([1, 2, 3]) → [1, 2, 3]", exp, no9(num));
+		assertEquals("no9([1, 2, 3]) --> [1, 2, 3]", exp, no9(num));
 		i++;
 	}
 	

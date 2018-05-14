@@ -19,9 +19,9 @@ import org.junit.Test;
 Given an array of strings, return a Map<String, Integer> containing a key for every different string in the array, and the value is that string's length.
 
 
-wordLen(["a", "bb", "a", "bb"]) → {"bb": 2, "a": 1}
-wordLen(["this", "and", "that", "and"]) → {"that": 4, "and": 3, "this": 4}
-wordLen(["code", "code", "code", "bug"]) → {"code": 4, "bug": 3}
+wordLen(["a", "bb", "a", "bb"]) --> {"bb": 2, "a": 1}
+wordLen(["this", "and", "that", "and"]) --> {"that": 4, "and": 3, "this": 4}
+wordLen(["code", "code", "code", "bug"]) --> {"code": 4, "bug": 3}
  */
 public class wordLen {
 
@@ -31,7 +31,7 @@ public class wordLen {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("wordLen([\"a\", \"bb\", \"a\", \"bb\"]) → {\"bb\": 2, \"a\": 1}\n");
+		System.out.println("wordLen([\"a\", \"bb\", \"a\", \"bb\"]) --> {\"bb\": 2, \"a\": 1}\n");
 
 		//Input array
 	    String[] array =  {"a", "bb", "a", "bb"};
@@ -49,7 +49,7 @@ public class wordLen {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("wordLen([\"this\", \"and\", \"that\", \"and\"]) → {\"that\": 4, \"and\": 3, \"this\": 4}\n");
+		System.out.println("wordLen([\"this\", \"and\", \"that\", \"and\"]) --> {\"that\": 4, \"and\": 3, \"this\": 4}\n");
 
 		//Input array
 	    String[] array =  {"this", "and", "that", "and"};
@@ -68,7 +68,7 @@ public class wordLen {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("wordLen([\"code\", \"code\", \"code\", \"bug\"]) → {\"code\": 4, \"bug\": 3}\n");
+		System.out.println("wordLen([\"code\", \"code\", \"code\", \"bug\"]) --> {\"code\": 4, \"bug\": 3}\n");
 
 		//Input array
 	    String[] array =  {"code", "code", "code", "bug"};

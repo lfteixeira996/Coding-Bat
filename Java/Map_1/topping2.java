@@ -20,9 +20,9 @@ if the key "ice cream" has a value, set that as the value for the key "yogurt" a
 If the key "spinach" has a value, change that value to "nuts".
 
 
-topping2({"ice cream": "cherry"}) → {"yogurt": "cherry", "ice cream": "cherry"}
-topping2({"spinach": "dirt", "ice cream": "cherry"}) → {"yogurt": "cherry", "spinach": "nuts", "ice cream": "cherry"}
-topping2({"yogurt": "salt"}) → {"yogurt": "salt"}
+topping2({"ice cream": "cherry"}) --> {"yogurt": "cherry", "ice cream": "cherry"}
+topping2({"spinach": "dirt", "ice cream": "cherry"}) --> {"yogurt": "cherry", "spinach": "nuts", "ice cream": "cherry"}
+topping2({"yogurt": "salt"}) --> {"yogurt": "salt"}
  */
 public class topping2 {
 
@@ -32,7 +32,7 @@ public class topping2 {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("topping2({\"ice cream\": \"cherry\"}) → {\"yogurt\": \"cherry\", \"ice cream\": \"cherry\"}\n");
+		System.out.println("topping2({\"ice cream\": \"cherry\"}) --> {\"yogurt\": \"cherry\", \"ice cream\": \"cherry\"}\n");
 
 		//Input map
 	    Map map	=	new HashMap();  
@@ -51,7 +51,7 @@ public class topping2 {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("topping2({\"spinach\": \"dirt\", \"ice cream\": \"cherry\"}) → {\"yogurt\": \"cherry\", \"spinach\": \"nuts\", \"ice cream\": \"cherry\"}\n");
+		System.out.println("topping2({\"spinach\": \"dirt\", \"ice cream\": \"cherry\"}) --> {\"yogurt\": \"cherry\", \"spinach\": \"nuts\", \"ice cream\": \"cherry\"}\n");
 
 		//Input map
 	    Map map	=	new HashMap();  
@@ -72,7 +72,7 @@ public class topping2 {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("topping2({\"yogurt\": \"salt\"}) → {\"yogurt\": \"salt\"}\n");
+		System.out.println("topping2({\"yogurt\": \"salt\"}) --> {\"yogurt\": \"salt\"}\n");
 
 		//Input map
 	    Map map	=	new HashMap();  

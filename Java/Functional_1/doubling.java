@@ -18,9 +18,9 @@ import org.junit.Test;
 Given a list of integers, return a list where each integer is multiplied by 2.
 
 
-doubling([1, 2, 3]) → [2, 4, 6]
-doubling([6, 8, 6, 8, -1]) → [12, 16, 12, 16, -2]
-doubling([]) → []
+doubling([1, 2, 3]) --> [2, 4, 6]
+doubling([6, 8, 6, 8, -1]) --> [12, 16, 12, 16, -2]
+doubling([]) --> []
  */
 public class doubling {
 
@@ -32,7 +32,7 @@ public class doubling {
 	public void Test1()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("doubling([1, 2, 3]) → [2, 4, 6]\n");
+		System.out.println("doubling([1, 2, 3]) --> [2, 4, 6]\n");
 		
 		//actual
 		num.add(1);
@@ -44,7 +44,7 @@ public class doubling {
 		exp.add(4);
 		exp.add(6);
 
-		assertEquals("doubling([1, 2, 3]) → [2, 4, 6]", exp, doubling(num));
+		assertEquals("doubling([1, 2, 3]) --> [2, 4, 6]", exp, doubling(num));
 		i++;
 	}
 	
@@ -52,7 +52,7 @@ public class doubling {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("doubling([6, 8, 6, 8, -1]) → [12, 16, 12, 16, -2]\n");
+		System.out.println("doubling([6, 8, 6, 8, -1]) --> [12, 16, 12, 16, -2]\n");
 		
 		//actual
 		num.add(6);
@@ -68,7 +68,7 @@ public class doubling {
 		exp.add(16);
 		exp.add(-2);
 
-		assertEquals("doubling([6, 8, 6, 8, -1]) → [12, 16, 12, 16, -2]", exp, doubling(num));
+		assertEquals("doubling([6, 8, 6, 8, -1]) --> [12, 16, 12, 16, -2]", exp, doubling(num));
 		i++;
 	}
 
@@ -76,9 +76,9 @@ public class doubling {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("doubling([]) → []\n");
+		System.out.println("doubling([]) --> []\n");
 
-		assertEquals("doubling([]) → []", exp, doubling(num));
+		assertEquals("doubling([]) --> []", exp, doubling(num));
 		i++;
 	}
 	

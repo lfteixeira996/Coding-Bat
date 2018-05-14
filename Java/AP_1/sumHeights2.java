@@ -22,9 +22,9 @@ For example, with the heights {5, 3, 6, 7, 2} and start=2, end=4 yields a sum of
 The start end end index will both be valid indexes into the array with start <= end.
 
 
-sumHeights2([5, 3, 6, 7, 2], 2, 4) → 7
-sumHeights2([5, 3, 6, 7, 2], 0, 1) → 2
-sumHeights2([5, 3, 6, 7, 2], 0, 4) → 15
+sumHeights2([5, 3, 6, 7, 2], 2, 4) --> 7
+sumHeights2([5, 3, 6, 7, 2], 0, 1) --> 2
+sumHeights2([5, 3, 6, 7, 2], 0, 4) --> 15
  */
 public class sumHeights2 {
 
@@ -34,9 +34,9 @@ public class sumHeights2 {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("sumHeights2([5, 3, 6, 7, 2], 2, 4) → 7\n");
+		System.out.println("sumHeights2([5, 3, 6, 7, 2], 2, 4) --> 7\n");
 		int[] inputA = {5, 3, 6, 7, 2};		
-		assertEquals("sumHeights2([5, 3, 6, 7, 2], 2, 4) → 7", 7, sumHeights2(inputA, 2, 4));
+		assertEquals("sumHeights2([5, 3, 6, 7, 2], 2, 4) --> 7", 7, sumHeights2(inputA, 2, 4));
 		i++;
 	}
 	
@@ -44,9 +44,9 @@ public class sumHeights2 {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("sumHeights2([5, 3, 6, 7, 2], 0, 1) → 2\n");
+		System.out.println("sumHeights2([5, 3, 6, 7, 2], 0, 1) --> 2\n");
 		int[] inputA = {5, 3, 6, 7, 2};		
-		assertEquals("sumHeights2([5, 3, 6, 7, 2], 0, 1) → 2", 2, sumHeights2(inputA, 0, 1));
+		assertEquals("sumHeights2([5, 3, 6, 7, 2], 0, 1) --> 2", 2, sumHeights2(inputA, 0, 1));
 		i++;
 	}
 
@@ -54,9 +54,9 @@ public class sumHeights2 {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("sumHeights2([5, 3, 6, 7, 2], 0, 4) → 15\n");
+		System.out.println("sumHeights2([5, 3, 6, 7, 2], 0, 4) --> 15\n");
 		int[] inputA = {5, 3, 6, 7, 2};		
-		assertEquals("sumHeights2([5, 3, 6, 7, 2], 0, 4) → 15", 15, sumHeights2(inputA, 0, 4));
+		assertEquals("sumHeights2([5, 3, 6, 7, 2], 0, 4) --> 15", 15, sumHeights2(inputA, 0, 4));
 		i++;
 	}
 	

@@ -19,9 +19,9 @@ import org.junit.Test;
 Given a list of strings, return a list where each string has "*" added at its end.
 
 
-addStar(["a", "bb", "ccc"]) → ["a*", "bb*", "ccc*"]
-addStar(["hello", "there"]) → ["hello*", "there*"]
-addStar(["*"]) → ["**"]
+addStar(["a", "bb", "ccc"]) --> ["a*", "bb*", "ccc*"]
+addStar(["hello", "there"]) --> ["hello*", "there*"]
+addStar(["*"]) --> ["**"]
  */
 public class addStar {
 
@@ -31,7 +31,7 @@ public class addStar {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("addStar([\"a\", \"bb\", \"ccc\"]) → [\"a*\", \"bb*\", \"ccc*\"]\n");
+		System.out.println("addStar([\"a\", \"bb\", \"ccc\"]) --> [\"a*\", \"bb*\", \"ccc*\"]\n");
 		
 		List<String> inputA = new ArrayList<String>();
 		inputA.add("a");
@@ -43,7 +43,7 @@ public class addStar {
 		outputA.add("bb*");
 		outputA.add("ccc*");
 				
-		assertEquals("addStar([\"a\", \"bb\", \"ccc\"]) → [\"a*\", \"bb*\", \"ccc*\"]", outputA, addStar(inputA));
+		assertEquals("addStar([\"a\", \"bb\", \"ccc\"]) --> [\"a*\", \"bb*\", \"ccc*\"]", outputA, addStar(inputA));
 		i++;
 	}
 	
@@ -51,7 +51,7 @@ public class addStar {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("addStar([\"hello\", \"there\"]) → [\"hello*\", \"there*\"]\n");
+		System.out.println("addStar([\"hello\", \"there\"]) --> [\"hello*\", \"there*\"]\n");
 		
 		List<String> inputA = new ArrayList<String>();
 		inputA.add("hello");
@@ -61,7 +61,7 @@ public class addStar {
 		outputA.add("hello*");
 		outputA.add("there*");
 				
-		assertEquals("addStar([\"hello\", \"there\"]) → [\"hello*\", \"there*\"]", outputA, addStar(inputA));
+		assertEquals("addStar([\"hello\", \"there\"]) --> [\"hello*\", \"there*\"]", outputA, addStar(inputA));
 		i++;
 	}
 	
@@ -69,7 +69,7 @@ public class addStar {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("addStar([\"*\"]) → [\"**\"]\n");
+		System.out.println("addStar([\"*\"]) --> [\"**\"]\n");
 		
 		List<String> inputA = new ArrayList<String>();
 		inputA.add("*");
@@ -77,7 +77,7 @@ public class addStar {
 		List<String> outputA = new ArrayList<String>();
 		outputA.add("**");
 				
-		assertEquals("addStar([\"*\"]) → [\"**\"]", outputA, addStar(inputA));
+		assertEquals("addStar([\"*\"]) --> [\"**\"]", outputA, addStar(inputA));
 		i++;
 	}
 	

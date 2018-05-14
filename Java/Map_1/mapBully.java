@@ -21,9 +21,9 @@ Modify and return the given map as follows: if the key "a" has a value, set the 
 and set the key "a" to have the value "". Basically "b" is a bully, taking the value and replacing it with the empty string.
 
 
-mapBully({"a": "candy", "b": "dirt"}) → {"a": "", "b": "candy"}
-mapBully({"a": "candy"}) → {"a": "", "b": "candy"}
-mapBully({"a": "candy", "b": "carrot", "c": "meh"}) → {"a": "", "b": "candy", "c": "meh"}
+mapBully({"a": "candy", "b": "dirt"}) --> {"a": "", "b": "candy"}
+mapBully({"a": "candy"}) --> {"a": "", "b": "candy"}
+mapBully({"a": "candy", "b": "carrot", "c": "meh"}) --> {"a": "", "b": "candy", "c": "meh"}
  */
 public class mapBully {
 
@@ -33,7 +33,7 @@ public class mapBully {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("mapBully({\"a\": \"candy\", \"b\": \"dirt\"}) → {\"a\": \"\", \"b\": \"candy\"}\n");
+		System.out.println("mapBully({\"a\": \"candy\", \"b\": \"dirt\"}) --> {\"a\": \"\", \"b\": \"candy\"}\n");
 
 	    Map map=new HashMap();  
 	    //Adding elements to map  
@@ -44,7 +44,7 @@ public class mapBully {
 	    
 	     
 		
-		//assertEquals("mapBully({\"a\": \"candy\", \"b\": \"dirt\"}) → {\"a\": \"\", \"b\": \"candy\"}", {"a": "", "b": "candy"}, helloName("Bob"));
+		//assertEquals("mapBully({\"a\": \"candy\", \"b\": \"dirt\"}) --> {\"a\": \"\", \"b\": \"candy\"}", {"a": "", "b": "candy"}, helloName("Bob"));
 		i++;
 	}
 

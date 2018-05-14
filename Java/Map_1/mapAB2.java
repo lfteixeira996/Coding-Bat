@@ -20,9 +20,9 @@ Modify and return the given map as follows:
 if the keys "a" and "b" are both in the map and have equal values, remove them both.
 
 
-mapAB2({"a": "aaa", "b": "aaa", "c": "cake"}) 	→ {"c": "cake"}
-mapAB2({"a": "aaa", "b": "bbb"}) 				→ {"a": "aaa", "b": "bbb"}
-mapAB2({"a": "aaa", "b": "bbb", "c": "aaa"}) 	→ {"a": "aaa", "b": "bbb", "c": "aaa"}
+mapAB2({"a": "aaa", "b": "aaa", "c": "cake"}) 	--> {"c": "cake"}
+mapAB2({"a": "aaa", "b": "bbb"}) 				--> {"a": "aaa", "b": "bbb"}
+mapAB2({"a": "aaa", "b": "bbb", "c": "aaa"}) 	--> {"a": "aaa", "b": "bbb", "c": "aaa"}
 
  */
 public class mapAB2 {
@@ -33,7 +33,7 @@ public class mapAB2 {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("mapAB2({\"a\": \"aaa\", \"b\": \"aaa\", \"c\": \"cake\"}) → {\"c\": \"cake\"}\n");
+		System.out.println("mapAB2({\"a\": \"aaa\", \"b\": \"aaa\", \"c\": \"cake\"}) --> {\"c\": \"cake\"}\n");
 
 		//Input map
 	    Map map	=	new HashMap();  
@@ -54,7 +54,7 @@ public class mapAB2 {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("mapAB2({\"a\": \"aaa\", \"b\": \"bbb\"}) → {\"a\": \"aaa\", \"b\": \"bbb\"}\n");
+		System.out.println("mapAB2({\"a\": \"aaa\", \"b\": \"bbb\"}) --> {\"a\": \"aaa\", \"b\": \"bbb\"}\n");
 
 		//Input map
 	    Map map	=	new HashMap();  
@@ -75,7 +75,7 @@ public class mapAB2 {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("mapAB2({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"aaa\"}) → {\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"aaa\"}\n");
+		System.out.println("mapAB2({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"aaa\"}) --> {\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"aaa\"}\n");
 
 		//Input map
 	    Map map	=	new HashMap();  

@@ -18,9 +18,9 @@ import org.junit.Test;
 Given a list of strings, return a list where each string has all its "x" removed.
 
 
-noX(["ax", "bb", "cx"]) → ["a", "bb", "c"]
-noX(["xxax", "xbxbx", "xxcx"]) → ["a", "bb", "c"]
-noX(["x"]) → [""]
+noX(["ax", "bb", "cx"]) --> ["a", "bb", "c"]
+noX(["xxax", "xbxbx", "xxcx"]) --> ["a", "bb", "c"]
+noX(["x"]) --> [""]
  */
 public class noX {
 
@@ -30,7 +30,7 @@ public class noX {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("noX([\"ax\", \"bb\", \"cx\"]) → [\"a\", \"bb\", \"c\"]\n");
+		System.out.println("noX([\"ax\", \"bb\", \"cx\"]) --> [\"a\", \"bb\", \"c\"]\n");
 		
 		List<String> inputA = new ArrayList<String>();
 		inputA.add("ax");
@@ -43,7 +43,7 @@ public class noX {
 		outputA.add("bb");
 		outputA.add("c");
 				
-		assertEquals("noX([\"ax\", \"bb\", \"cx\"]) → [\"a\", \"bb\", \"c\"]", outputA, noX(inputA));
+		assertEquals("noX([\"ax\", \"bb\", \"cx\"]) --> [\"a\", \"bb\", \"c\"]", outputA, noX(inputA));
 		i++;
 	}
 
@@ -51,7 +51,7 @@ public class noX {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("noX([\"xxax\", \"xbxbx\", \"xxcx\"]) → [\"a\", \"bb\", \"c\"]\n");
+		System.out.println("noX([\"xxax\", \"xbxbx\", \"xxcx\"]) --> [\"a\", \"bb\", \"c\"]\n");
 		
 		List<String> inputA = new ArrayList<String>();
 		inputA.add("xxax");
@@ -64,7 +64,7 @@ public class noX {
 		outputA.add("bb");
 		outputA.add("c");
 				
-		assertEquals("noX([\"xxax\", \"xbxbx\", \"xxcx\"]) → [\"a\", \"bb\", \"c\"]", outputA, noX(inputA));
+		assertEquals("noX([\"xxax\", \"xbxbx\", \"xxcx\"]) --> [\"a\", \"bb\", \"c\"]", outputA, noX(inputA));
 		i++;
 	}
 	
@@ -72,7 +72,7 @@ public class noX {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("noX([\"x\"]) → [\"\"]\n");
+		System.out.println("noX([\"x\"]) --> [\"\"]\n");
 		
 		List<String> inputA = new ArrayList<String>();
 		inputA.add("x");
@@ -80,7 +80,7 @@ public class noX {
 		List<String> outputA = new ArrayList<String>();
 		outputA.add("");
 				
-		assertEquals("noX([\"x\"]) → [\"\"]", outputA, noX(inputA));
+		assertEquals("noX([\"x\"]) --> [\"\"]", outputA, noX(inputA));
 		i++;
 	}
 	

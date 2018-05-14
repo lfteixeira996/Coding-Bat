@@ -19,9 +19,9 @@ However, if any of the values is a teen -- in the range 13..19 inclusive
 Write a separate helper "public int fixTeen(int n) {"that takes in an int value and returns that value fixed for the teen rule. 
 In this way, you avoid repeating the teen code 3 times (i.e. "decomposition"). Define the helper below and at the same indent level as the main noTeenSum().
 
-noTeenSum(1, 2, 3) → 6
-noTeenSum(2, 13, 1) → 3
-noTeenSum(2, 1, 14) → 3
+noTeenSum(1, 2, 3) --> 6
+noTeenSum(2, 13, 1) --> 3
+noTeenSum(2, 1, 14) --> 3
  */
 public class noTeenSum {
 
@@ -31,8 +31,8 @@ public class noTeenSum {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("noTeenSum(1, 2, 3) → 6\n");
-		assertEquals("noTeenSum(1, 2, 3) → 6", 6, noTeenSum(1, 2, 3));
+		System.out.println("noTeenSum(1, 2, 3) --> 6\n");
+		assertEquals("noTeenSum(1, 2, 3) --> 6", 6, noTeenSum(1, 2, 3));
 		i++;
 	}
 	
@@ -40,8 +40,8 @@ public class noTeenSum {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("noTeenSum(2, 13, 1) → 3\n");
-		assertEquals("noTeenSum(2, 13, 1) → 3", 3, noTeenSum(2, 13, 1));
+		System.out.println("noTeenSum(2, 13, 1) --> 3\n");
+		assertEquals("noTeenSum(2, 13, 1) --> 3", 3, noTeenSum(2, 13, 1));
 		i++;
 	}
 	
@@ -49,8 +49,8 @@ public class noTeenSum {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("noTeenSum(2, 1, 14) → 3\n");
-		assertEquals("noTeenSum(2, 1, 14) → 3", 3, noTeenSum(2, 1, 14));
+		System.out.println("noTeenSum(2, 1, 14) --> 3\n");
+		assertEquals("noTeenSum(2, 1, 14) --> 3", 3, noTeenSum(2, 1, 14));
 		i++;
 	}
 	

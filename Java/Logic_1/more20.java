@@ -15,9 +15,9 @@ import org.junit.Test;
 Return true if the given non-negative number is 1 or 2 more than a multiple of 20. 
 See also: Introduction to Mod
 
-more20(20) → false
-more20(21) → true
-more20(22) → true
+more20(20) --> false
+more20(21) --> true
+more20(22) --> true
  */
 public class more20 {
 
@@ -27,7 +27,7 @@ public class more20 {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("more20(20) → false\n");
+		System.out.println("more20(20) --> false\n");
 		assertEquals(false, more20(20));
 	    i++;
 	}
@@ -36,7 +36,7 @@ public class more20 {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("more20(21) → true\n");
+		System.out.println("more20(21) --> true\n");
 		assertEquals(true, more20(21));
 	    i++;
 	}
@@ -45,7 +45,7 @@ public class more20 {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("more20(22) → true\n");
+		System.out.println("more20(22) --> true\n");
 		assertEquals(true, more20(22));
 	    i++;
 	}

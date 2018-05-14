@@ -18,9 +18,9 @@ both the beginning and end of the string without overlapping.
 For example, sameEnds("abXab") is "ab".
 
 
-sameEnds("abXYab") → "ab"
-sameEnds("xx") → "x"
-sameEnds("xxx") → "x" 
+sameEnds("abXYab") --> "ab"
+sameEnds("xx") --> "x"
+sameEnds("xxx") --> "x" 
  */
 public class sameEnds {
 
@@ -30,8 +30,8 @@ public class sameEnds {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("sameEnds(\"abXYab\") → \"ab\"\n");
-		assertEquals("sameEnds(\"abXYab\") → \"ab\"","ab", sameEnds("abXYab"));
+		System.out.println("sameEnds(\"abXYab\") --> \"ab\"\n");
+		assertEquals("sameEnds(\"abXYab\") --> \"ab\"","ab", sameEnds("abXYab"));
 		i++;
 	}
 	
@@ -39,8 +39,8 @@ public class sameEnds {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("sameEnds(\"xx\") → \"x\"\n");
-		assertEquals("sameEnds(\"xx\") → \"x\"","x", sameEnds("xx"));
+		System.out.println("sameEnds(\"xx\") --> \"x\"\n");
+		assertEquals("sameEnds(\"xx\") --> \"x\"","x", sameEnds("xx"));
 		i++;
 	}
 	
@@ -48,8 +48,8 @@ public class sameEnds {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("sameEnds(\"xxx\") → \"x\" \n");
-		assertEquals("sameEnds(\"xxx\") → \"x\"","x", sameEnds("xxx"));
+		System.out.println("sameEnds(\"xxx\") --> \"x\" \n");
+		assertEquals("sameEnds(\"xxx\") --> \"x\"","x", sameEnds("xxx"));
 		i++;
 	}
 	

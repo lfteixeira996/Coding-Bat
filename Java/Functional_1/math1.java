@@ -18,9 +18,9 @@ import org.junit.Test;
 Given a list of integers, return a list where each integer is added to 1 and the result is multiplied by 10.
 
 
-math1([1, 2, 3]) → [20, 30, 40]
-math1([6, 8, 6, 8, 1]) → [70, 90, 70, 90, 20]
-math1([10]) → [110]
+math1([1, 2, 3]) --> [20, 30, 40]
+math1([6, 8, 6, 8, 1]) --> [70, 90, 70, 90, 20]
+math1([10]) --> [110]
  */
 public class math1 {
 
@@ -30,7 +30,7 @@ public class math1 {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("math1([1, 2, 3]) → [20, 30, 40]\n");
+		System.out.println("math1([1, 2, 3]) --> [20, 30, 40]\n");
 		
 		List<Integer> inputA = new ArrayList<Integer>();
 		inputA.add(1);
@@ -43,7 +43,7 @@ public class math1 {
 		outputA.add(30);
 		outputA.add(40);
 				
-		assertEquals("math1([1, 2, 3]) → [20, 30, 40]", outputA, math1(inputA));
+		assertEquals("math1([1, 2, 3]) --> [20, 30, 40]", outputA, math1(inputA));
 		i++;
 	}
 
@@ -51,7 +51,7 @@ public class math1 {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("math1([6, 8, 6, 8, 1]) → [70, 90, 70, 90, 20]\n");
+		System.out.println("math1([6, 8, 6, 8, 1]) --> [70, 90, 70, 90, 20]\n");
 		
 		List<Integer> inputA = new ArrayList<Integer>();
 		inputA.add(6);
@@ -67,7 +67,7 @@ public class math1 {
 		outputA.add(90);
 		outputA.add(20);
 				
-		assertEquals("math1([6, 8, 6, 8, 1]) → [70, 90, 70, 90, 20]", outputA, math1(inputA));
+		assertEquals("math1([6, 8, 6, 8, 1]) --> [70, 90, 70, 90, 20]", outputA, math1(inputA));
 		i++;
 	}
 	
@@ -75,7 +75,7 @@ public class math1 {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("math1([10]) → [110]\n");
+		System.out.println("math1([10]) --> [110]\n");
 		
 		List<Integer> inputA = new ArrayList<Integer>();
 		inputA.add(10);
@@ -83,7 +83,7 @@ public class math1 {
 		List<Integer> outputA = new ArrayList<Integer>();
 		outputA.add(110);
 				
-		assertEquals("math1([10]) → [110]", outputA, math1(inputA));
+		assertEquals("math1([10]) --> [110]", outputA, math1(inputA));
 		i++;
 	}
 	

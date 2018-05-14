@@ -19,9 +19,9 @@ import org.junit.Test;
 Given a list of strings, return a list of the strings, omitting any string length 3 or 4.
 
 
-no34(["a", "bb", "ccc"]) → ["a", "bb"]
-no34(["a", "bb", "ccc", "dddd"]) → ["a", "bb"]
-no34(["ccc", "dddd", "apple"]) → ["apple"]
+no34(["a", "bb", "ccc"]) --> ["a", "bb"]
+no34(["a", "bb", "ccc", "dddd"]) --> ["a", "bb"]
+no34(["ccc", "dddd", "apple"]) --> ["apple"]
  */
 public class no34 {
 
@@ -33,7 +33,7 @@ public class no34 {
 	public void Test1()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("no34([\"a\", \"bb\", \"ccc\"]) → [\"a\", \"bb\"]\n");
+		System.out.println("no34([\"a\", \"bb\", \"ccc\"]) --> [\"a\", \"bb\"]\n");
 		
 		//actual
 		num.add("a");
@@ -44,7 +44,7 @@ public class no34 {
 		exp.add("a");
 		exp.add("bb");
 		
-		assertEquals("no34([\"a\", \"bb\", \"ccc\"]) → [\"a\", \"bb\"]", exp, no34(num));
+		assertEquals("no34([\"a\", \"bb\", \"ccc\"]) --> [\"a\", \"bb\"]", exp, no34(num));
 		i++;
 	}
 
@@ -52,7 +52,7 @@ public class no34 {
 	public void Test2()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("no34([\"a\", \"bb\", \"ccc\", \"dddd\"]) → [\"a\", \"bb\"]\n");
+		System.out.println("no34([\"a\", \"bb\", \"ccc\", \"dddd\"]) --> [\"a\", \"bb\"]\n");
 		
 		//actual
 		num.add("a");
@@ -65,7 +65,7 @@ public class no34 {
 		exp.add("a");
 		exp.add("bb");
 		
-		assertEquals("no34([\"a\", \"bb\", \"ccc\", \"dddd\"]) → [\"a\", \"bb\"]", exp, no34(num));
+		assertEquals("no34([\"a\", \"bb\", \"ccc\", \"dddd\"]) --> [\"a\", \"bb\"]", exp, no34(num));
 		i++;
 	}
 	
@@ -73,7 +73,7 @@ public class no34 {
 	public void Test3()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("no34([\"ccc\", \"dddd\", \"apple\"]) → [\"apple\"]\n");
+		System.out.println("no34([\"ccc\", \"dddd\", \"apple\"]) --> [\"apple\"]\n");
 		
 		//actual
 		num.add("ccc");
@@ -83,7 +83,7 @@ public class no34 {
 		//expected
 		exp.add("apple");
 		
-		assertEquals("no34([\"ccc\", \"dddd\", \"apple\"]) → [\"apple\"]", exp, no34(num));
+		assertEquals("no34([\"ccc\", \"dddd\", \"apple\"]) --> [\"apple\"]", exp, no34(num));
 		i++;
 	}
 	

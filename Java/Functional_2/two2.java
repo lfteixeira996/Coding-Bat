@@ -18,9 +18,9 @@ import org.junit.Test;
 Given a list of non-negative integers, return a list of those numbers multiplied by 2, omitting any of the resulting numbers that end in 2.
 
 
-two2([1, 2, 3]) → [4, 6]
-two2([2, 6, 11]) → [4]
-two2([0]) → [0]
+two2([1, 2, 3]) --> [4, 6]
+two2([2, 6, 11]) --> [4]
+two2([0]) --> [0]
  */
 public class two2 {
 
@@ -32,7 +32,7 @@ public class two2 {
 	public void Test1()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("two2([1, 2, 3]) → [4, 6]\n");
+		System.out.println("two2([1, 2, 3]) --> [4, 6]\n");
 		
 		//actual
 		num.add(1);
@@ -43,7 +43,7 @@ public class two2 {
 		exp.add(4);
 		exp.add(6);
 		
-		assertEquals("two2([1, 2, 3]) → [4, 6]", exp, two2(num));
+		assertEquals("two2([1, 2, 3]) --> [4, 6]", exp, two2(num));
 		i++;
 	}
 
@@ -51,7 +51,7 @@ public class two2 {
 	public void Test2()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("two2([2, 6, 11]) → [4]\n");
+		System.out.println("two2([2, 6, 11]) --> [4]\n");
 		
 		//actual
 		num.add(2);
@@ -61,7 +61,7 @@ public class two2 {
 		//expected
 		exp.add(4);
 		
-		assertEquals("two2([2, 6, 11]) → [4]", exp, two2(num));
+		assertEquals("two2([2, 6, 11]) --> [4]", exp, two2(num));
 		i++;
 	}
 	
@@ -69,7 +69,7 @@ public class two2 {
 	public void Test3()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("two2([0]) → [0]\n");
+		System.out.println("two2([0]) --> [0]\n");
 		
 		//actual
 		num.add(0);
@@ -77,7 +77,7 @@ public class two2 {
 		//expected
 		exp.add(0);
 		
-		assertEquals("two2([0]) → [0]", exp, two2(num));
+		assertEquals("two2([0]) --> [0]", exp, two2(num));
 		i++;
 	}
 	

@@ -17,9 +17,9 @@ Given 2 ints, a and b, return their sum. However, "teen" values in the range 13.
 are extra lucky. So if either value is a teen, just return 19.
 
 
-teenSum(3, 4) → 7
-teenSum(10, 13) → 19
-teenSum(13, 2) → 19
+teenSum(3, 4) --> 7
+teenSum(10, 13) --> 19
+teenSum(13, 2) --> 19
  */
 public class teenSum {
 
@@ -29,7 +29,7 @@ public class teenSum {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("teenSum(3, 4) → 7\n");
+		System.out.println("teenSum(3, 4) --> 7\n");
 		assertEquals(7, teenSum(3, 4));
 	    i++;
 	}
@@ -38,7 +38,7 @@ public class teenSum {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("teenSum(10, 13) → 19\n");
+		System.out.println("teenSum(10, 13) --> 19\n");
 		assertEquals(19, teenSum(10, 13));
 	    i++;
 	}
@@ -47,7 +47,7 @@ public class teenSum {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("teenSum(13, 2) → 19\n");
+		System.out.println("teenSum(13, 2) --> 19\n");
 		assertEquals(19, teenSum(13, 2));
 	    i++;
 	}

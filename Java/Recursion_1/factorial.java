@@ -18,9 +18,9 @@ import org.junit.Test;
 Given n of 1 or more, return the factorial of n, which is n * (n-1) * (n-2) ... 1. Compute the result recursively (without loops).
 
 
-factorial(1) → 1
-factorial(2) → 2
-factorial(3) → 6
+factorial(1) --> 1
+factorial(2) --> 2
+factorial(3) --> 6
  */
 public class factorial {
 
@@ -30,8 +30,8 @@ public class factorial {
 	public void Test1()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("factorial(1) → 1\n");
-		assertEquals("factorial(1) → 1", 1, factorial(1));
+		System.out.println("factorial(1) --> 1\n");
+		assertEquals("factorial(1) --> 1", 1, factorial(1));
 		i++;
 	}
 	
@@ -39,8 +39,8 @@ public class factorial {
 	public void Test2()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("factorial(2) → 2\n");
-		assertEquals("factorial(2) → 2", 2, factorial(2));
+		System.out.println("factorial(2) --> 2\n");
+		assertEquals("factorial(2) --> 2", 2, factorial(2));
 		i++;
 	}
 	
@@ -48,8 +48,8 @@ public class factorial {
 	public void Test3()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("factorial(3) → 6\n");
-		assertEquals("factorial(3) → 6", 6, factorial(3));
+		System.out.println("factorial(3) --> 6\n");
+		assertEquals("factorial(3) --> 6", 6, factorial(3));
 		i++;
 	}
 	

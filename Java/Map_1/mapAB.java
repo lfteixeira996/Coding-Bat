@@ -20,9 +20,9 @@ Modify and return the given map as follows: for this problem the map may or may 
 If both keys are present, append their 2 string values together and store the result under the key "ab".
 
 
-mapAB({"a": "Hi", "b": "There"}) → {"a": "Hi", "ab": "HiThere", "b": "There"}
-mapAB({"a": "Hi"}) → {"a": "Hi"}
-mapAB({"b": "There"}) → {"b": "There"}
+mapAB({"a": "Hi", "b": "There"}) --> {"a": "Hi", "ab": "HiThere", "b": "There"}
+mapAB({"a": "Hi"}) --> {"a": "Hi"}
+mapAB({"b": "There"}) --> {"b": "There"}
  */
 public class mapAB {
 
@@ -32,7 +32,7 @@ public class mapAB {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("mapAB({\"a\": \"Hi\", \"b\": \"There\"}) → {\"a\": \"Hi\", \"ab\": \"HiThere\", \"b\": \"There\"}\n");
+		System.out.println("mapAB({\"a\": \"Hi\", \"b\": \"There\"}) --> {\"a\": \"Hi\", \"ab\": \"HiThere\", \"b\": \"There\"}\n");
 
 		//Input map
 	    Map map	=	new HashMap();  
@@ -53,7 +53,7 @@ public class mapAB {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("mapAB({\"a\": \"Hi\"}) → {\"a\": \"Hi\"}\n");
+		System.out.println("mapAB({\"a\": \"Hi\"}) --> {\"a\": \"Hi\"}\n");
 
 		//Input map
 	    Map map	=	new HashMap();  
@@ -71,7 +71,7 @@ public class mapAB {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("mapAB({\"b\": \"There\"}) → {\"b\": \"There\"}\n");
+		System.out.println("mapAB({\"b\": \"There\"}) --> {\"b\": \"There\"}\n");
 
 		//Input map
 	    Map map	=	new HashMap();  

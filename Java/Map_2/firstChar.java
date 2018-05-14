@@ -19,9 +19,9 @@ Given an array of non-empty strings, return a Map<String, String> with a key for
 with the value of all the strings starting with that character appended together in the order they appear in the array.
 
 
-firstChar(["salt", "tea", "soda", "toast"]) → {"s": "saltsoda", "t": "teatoast"}
-firstChar(["aa", "bb", "cc", "aAA", "cCC", "d"]) → {"a": "aaaAA", "b": "bb", "c": "cccCC", "d": "d"}
-firstChar([]) → {}
+firstChar(["salt", "tea", "soda", "toast"]) --> {"s": "saltsoda", "t": "teatoast"}
+firstChar(["aa", "bb", "cc", "aAA", "cCC", "d"]) --> {"a": "aaaAA", "b": "bb", "c": "cccCC", "d": "d"}
+firstChar([]) --> {}
  */
 public class firstChar {
 
@@ -31,7 +31,7 @@ public class firstChar {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("firstChar([\"salt\", \"tea\", \"soda\", \"toast\"]) → {\"s\": \"saltsoda\", \"t\": \"teatoast\"}\n");
+		System.out.println("firstChar([\"salt\", \"tea\", \"soda\", \"toast\"]) --> {\"s\": \"saltsoda\", \"t\": \"teatoast\"}\n");
 
 		//Input array
 	    String[] array =  {"salt", "tea", "soda", "toast"};
@@ -49,7 +49,7 @@ public class firstChar {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("firstChar([\"aa\", \"bb\", \"cc\", \"aAA\", \"cCC\", \"d\"]) → {\"a\": \"aaaAA\", \"b\": \"bb\", \"c\": \"cccCC\", \"d\": \"d\"}\n");
+		System.out.println("firstChar([\"aa\", \"bb\", \"cc\", \"aAA\", \"cCC\", \"d\"]) --> {\"a\": \"aaaAA\", \"b\": \"bb\", \"c\": \"cccCC\", \"d\": \"d\"}\n");
 
 		//Input array
 	    String[] array =  {"aa", "bb", "cc", "aAA", "cCC", "d"};
@@ -69,7 +69,7 @@ public class firstChar {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("firstChar([]) → {}\n");
+		System.out.println("firstChar([]) --> {}\n");
 
 		//Input array
 	    String[] array =  {""};

@@ -15,9 +15,9 @@ import org.junit.Test;
 Given an array of scores, return true if each score is equal or greater than the one before. The array will be length 2 or more.
 
 
-scoresIncreasing([1, 3, 4]) → true
-scoresIncreasing([1, 3, 2]) → false
-scoresIncreasing([1, 1, 4]) → true
+scoresIncreasing([1, 3, 4]) --> true
+scoresIncreasing([1, 3, 2]) --> false
+scoresIncreasing([1, 1, 4]) --> true
  */
 public class scoresIncreasing {
 
@@ -27,9 +27,9 @@ public class scoresIncreasing {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("scoresIncreasing([1, 3, 4]) → true\n");
+		System.out.println("scoresIncreasing([1, 3, 4]) --> true\n");
 		int[] num = {1, 2, 3};
-		assertEquals("scoresIncreasing([1, 3, 4]) → true", true, scoresIncreasing(num));
+		assertEquals("scoresIncreasing([1, 3, 4]) --> true", true, scoresIncreasing(num));
 		i++;
 	}
 	
@@ -37,9 +37,9 @@ public class scoresIncreasing {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("scoresIncreasing([1, 3, 2]) → false\n");
+		System.out.println("scoresIncreasing([1, 3, 2]) --> false\n");
 		int[] num = {1, 3, 2};
-		assertEquals("scoresIncreasing([1, 3, 2]) → false", false, scoresIncreasing(num));
+		assertEquals("scoresIncreasing([1, 3, 2]) --> false", false, scoresIncreasing(num));
 		i++;
 	}
 	
@@ -47,9 +47,9 @@ public class scoresIncreasing {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("scoresIncreasing([1, 1, 4]) → true\n");
+		System.out.println("scoresIncreasing([1, 1, 4]) --> true\n");
 		int[] num = {1, 1, 4};
-		assertEquals("scoresIncreasing([1, 1, 4]) → true", true, scoresIncreasing(num));
+		assertEquals("scoresIncreasing([1, 1, 4]) --> true", true, scoresIncreasing(num));
 		i++;
 	}
 	

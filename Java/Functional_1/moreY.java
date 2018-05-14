@@ -19,9 +19,9 @@ import org.junit.Test;
 Given a list of strings, return a list where each string has "y" added at its start and end.
 
 
-moreY(["a", "b", "c"]) → ["yay", "yby", "ycy"]
-moreY(["hello", "there"]) → ["yhelloy", "ytherey"]
-moreY(["yay"]) → ["yyayy"]
+moreY(["a", "b", "c"]) --> ["yay", "yby", "ycy"]
+moreY(["hello", "there"]) --> ["yhelloy", "ytherey"]
+moreY(["yay"]) --> ["yyayy"]
  */
 public class moreY {
 
@@ -31,7 +31,7 @@ public class moreY {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("moreY([\"a\", \"b\", \"c\"]) → [\"yay\", \"yby\", \"ycy\"]\n");
+		System.out.println("moreY([\"a\", \"b\", \"c\"]) --> [\"yay\", \"yby\", \"ycy\"]\n");
 		
 		List<String> inputA = new ArrayList<String>();
 		inputA.add("a");
@@ -44,7 +44,7 @@ public class moreY {
 		outputA.add("yby");
 		outputA.add("ycy");
 				
-		assertEquals("moreY([\"a\", \"b\", \"c\"]) → [\"yay\", \"yby\", \"ycy\"]", outputA, moreY(inputA));
+		assertEquals("moreY([\"a\", \"b\", \"c\"]) --> [\"yay\", \"yby\", \"ycy\"]", outputA, moreY(inputA));
 		i++;
 	}
 
@@ -52,7 +52,7 @@ public class moreY {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("moreY([\"hello\", \"there\"]) → [\"yhelloy\", \"ytherey\"]\n");
+		System.out.println("moreY([\"hello\", \"there\"]) --> [\"yhelloy\", \"ytherey\"]\n");
 		
 		List<String> inputA = new ArrayList<String>();
 		inputA.add("hello");
@@ -62,7 +62,7 @@ public class moreY {
 		outputA.add("yhelloy");
 		outputA.add("ytherey");
 				
-		assertEquals("moreY([\"hello\", \"there\"]) → [\"yhelloy\", \"ytherey\"]", outputA, moreY(inputA));
+		assertEquals("moreY([\"hello\", \"there\"]) --> [\"yhelloy\", \"ytherey\"]", outputA, moreY(inputA));
 		i++;
 	}
 	
@@ -70,7 +70,7 @@ public class moreY {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("moreY([\"yay\"]) → [\"yyayy\"]\n");
+		System.out.println("moreY([\"yay\"]) --> [\"yyayy\"]\n");
 		
 		List<String> inputA = new ArrayList<String>();
 		inputA.add("yay");
@@ -78,7 +78,7 @@ public class moreY {
 		List<String> outputA = new ArrayList<String>();
 		outputA.add("yyayy");
 				
-		assertEquals("moreY([\"yay\"]) → [\"yyayy\"]", outputA, moreY(inputA));
+		assertEquals("moreY([\"yay\"]) --> [\"yyayy\"]", outputA, moreY(inputA));
 		i++;
 	}
 	

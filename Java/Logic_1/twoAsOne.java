@@ -16,9 +16,9 @@ import org.junit.Test;
 Given three ints, a b c, return true if it is possible to add two of the ints to get the third.
 
 
-twoAsOne(1, 2, 3) → true
-twoAsOne(3, 1, 2) → true
-twoAsOne(3, 2, 2) → false
+twoAsOne(1, 2, 3) --> true
+twoAsOne(3, 1, 2) --> true
+twoAsOne(3, 2, 2) --> false
  */
 public class twoAsOne {
 
@@ -28,7 +28,7 @@ public class twoAsOne {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("twoAsOne(1, 2, 3) → true\n");
+		System.out.println("twoAsOne(1, 2, 3) --> true\n");
 		assertEquals(true, twoAsOne(1, 2, 3));
 	    i++;
 	}
@@ -37,7 +37,7 @@ public class twoAsOne {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("twoAsOne(3, 1, 2) → true\n");
+		System.out.println("twoAsOne(3, 1, 2) --> true\n");
 		assertEquals(true, twoAsOne(3, 1, 2));
 	    i++;
 	}
@@ -46,7 +46,7 @@ public class twoAsOne {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("twoAsOne(3, 2, 2) → false\n");
+		System.out.println("twoAsOne(3, 2, 2) --> false\n");
 		assertEquals(false, twoAsOne(3, 2, 2));
 	    i++;
 	}

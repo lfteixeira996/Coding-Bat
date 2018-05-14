@@ -17,9 +17,9 @@ import org.junit.Test;
 /**
 Given a list of integers, return a list of the integers, omitting any that are less than 0.
 
-noNeg([1, -2]) → [1]
-noNeg([-3, -3, 3, 3]) → [3, 3]
-noNeg([-1, -1, -1]) → []
+noNeg([1, -2]) --> [1]
+noNeg([-3, -3, 3, 3]) --> [3, 3]
+noNeg([-1, -1, -1]) --> []
  */
 public class noNeg {
 
@@ -31,7 +31,7 @@ public class noNeg {
 	public void Test1()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("noNeg([1, -2]) → [1]\n");
+		System.out.println("noNeg([1, -2]) --> [1]\n");
 		
 		//actual
 		num.add(1);
@@ -40,7 +40,7 @@ public class noNeg {
 		//expected
 		exp.add(1);
 
-		assertEquals("noNeg([1, -2]) → [1]", exp, noNeg(num));
+		assertEquals("noNeg([1, -2]) --> [1]", exp, noNeg(num));
 		i++;
 	}
 
@@ -48,7 +48,7 @@ public class noNeg {
 	public void Test2()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("noNeg([-3, -3, 3, 3]) → [3, 3]\n");
+		System.out.println("noNeg([-3, -3, 3, 3]) --> [3, 3]\n");
 		
 		//actual
 		num.add(-3);
@@ -60,7 +60,7 @@ public class noNeg {
 		exp.add(3);
 		exp.add(3);
 
-		assertEquals("noNeg([-3, -3, 3, 3]) → [3, 3]", exp, noNeg(num));
+		assertEquals("noNeg([-3, -3, 3, 3]) --> [3, 3]", exp, noNeg(num));
 		i++;
 	}
 	
@@ -68,14 +68,14 @@ public class noNeg {
 	public void Test3()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("noNeg([-1, -1, -1]) → []\n");
+		System.out.println("noNeg([-1, -1, -1]) --> []\n");
 		
 		//actual
 		num.add(-1);
 		num.add(-1);
 		num.add(-1);
 		
-		assertEquals("noNeg([-1, -1, -1]) → []", exp, noNeg(num));
+		assertEquals("noNeg([-1, -1, -1]) --> []", exp, noNeg(num));
 		i++;
 	}
 	

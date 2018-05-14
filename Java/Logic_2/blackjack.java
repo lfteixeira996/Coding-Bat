@@ -16,9 +16,9 @@ import org.junit.Test;
 Given 2 int values greater than 0, return whichever value is nearest to 21 without going over. Return 0 if they both go over.
 
 
-blackjack(19, 21) → 21
-blackjack(21, 19) → 21
-blackjack(19, 22) → 19
+blackjack(19, 21) --> 21
+blackjack(21, 19) --> 21
+blackjack(19, 22) --> 19
  */
 public class blackjack {
 
@@ -28,8 +28,8 @@ public class blackjack {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("blackjack(19, 21) → 21\n");
-		assertEquals("blackjack(19, 21) → 21", 21, blackjack(19, 21));
+		System.out.println("blackjack(19, 21) --> 21\n");
+		assertEquals("blackjack(19, 21) --> 21", 21, blackjack(19, 21));
 		i++;
 	}
 	
@@ -37,8 +37,8 @@ public class blackjack {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("blackjack(21, 19) → 21\n");
-		assertEquals("blackjack(21, 19) → 21", 21, blackjack(21, 19));
+		System.out.println("blackjack(21, 19) --> 21\n");
+		assertEquals("blackjack(21, 19) --> 21", 21, blackjack(21, 19));
 		i++;
 	}
 
@@ -46,8 +46,8 @@ public class blackjack {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("blackjack(19, 22) → 19\n");
-		assertEquals("blackjack(19, 22) → 19", 19, blackjack(19, 22));
+		System.out.println("blackjack(19, 22) --> 19\n");
+		assertEquals("blackjack(19, 22) --> 19", 19, blackjack(19, 22));
 		i++;
 	}
 	

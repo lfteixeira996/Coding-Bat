@@ -18,9 +18,9 @@ ignoring all other characters. Return 0 if there are no digits in the string.
 (Note: Character.isDigit(char) tests if a char is one of the chars '0', '1', .. '9'. Integer.parseInt(string) converts a string to an int.)
 
 
-sumDigits("aa1bc2d3") → 6
-sumDigits("aa11b33") → 8
-sumDigits("Chocolate") → 0
+sumDigits("aa1bc2d3") --> 6
+sumDigits("aa11b33") --> 8
+sumDigits("Chocolate") --> 0
  */
 public class sumDigits {
 
@@ -30,8 +30,8 @@ public class sumDigits {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("sumDigits(\"aa1bc2d3\") → 6\n");
-		assertEquals("sumDigits(\"aa1bc2d3\") → 6", 6, sumDigits("aa1bc2d3"));
+		System.out.println("sumDigits(\"aa1bc2d3\") --> 6\n");
+		assertEquals("sumDigits(\"aa1bc2d3\") --> 6", 6, sumDigits("aa1bc2d3"));
 		i++;
 	}
 
@@ -39,8 +39,8 @@ public class sumDigits {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("sumDigits(\"aa11b33\") → 8\n");
-		assertEquals("sumDigits(\"aa11b33\") → 8", 8, sumDigits("aa11b33"));
+		System.out.println("sumDigits(\"aa11b33\") --> 8\n");
+		assertEquals("sumDigits(\"aa11b33\") --> 8", 8, sumDigits("aa11b33"));
 		i++;
 	}
 	
@@ -48,8 +48,8 @@ public class sumDigits {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("sumDigits(\"Chocolate\") → 0\n");
-		assertEquals("sumDigits(\"Chocolate\") → 0", 0, sumDigits("Chocolate"));
+		System.out.println("sumDigits(\"Chocolate\") --> 0\n");
+		assertEquals("sumDigits(\"Chocolate\") --> 0", 0, sumDigits("Chocolate"));
 		i++;
 	}
 	

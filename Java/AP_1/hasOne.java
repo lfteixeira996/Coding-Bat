@@ -16,9 +16,9 @@ import org.junit.Test;
 Given a positive int n, return true if it contains a 1 digit. Note: use % to get the rightmost digit, and / to discard the rightmost digit.
 
 
-hasOne(10) → true
-hasOne(22) → false
-hasOne(220) → false
+hasOne(10) --> true
+hasOne(22) --> false
+hasOne(220) --> false
  */
 public class hasOne {
 
@@ -28,8 +28,8 @@ public class hasOne {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("hasOne(10) → true\n");		
-		assertEquals("hasOne(10) → true", true, hasOne(10));
+		System.out.println("hasOne(10) --> true\n");		
+		assertEquals("hasOne(10) --> true", true, hasOne(10));
 		i++;
 	}
 	
@@ -37,8 +37,8 @@ public class hasOne {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("hasOne(22) → false\n");		
-		assertEquals("hasOne(22) → false", false, hasOne(22));
+		System.out.println("hasOne(22) --> false\n");		
+		assertEquals("hasOne(22) --> false", false, hasOne(22));
 		i++;
 	}
 	
@@ -46,8 +46,8 @@ public class hasOne {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("hasOne(220) → false\n");		
-		assertEquals("hasOne(220) → false", false, hasOne(220));
+		System.out.println("hasOne(220) --> false\n");		
+		assertEquals("hasOne(220) --> false", false, hasOne(220));
 		i++;
 	}
 

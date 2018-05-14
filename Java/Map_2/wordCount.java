@@ -20,9 +20,9 @@ The classic word-count algorithm: given an array of strings, return a Map<String
 with a key for each different string, with the value the number of times that string appears in the array.
 
 
-wordCount(["a", "b", "a", "c", "b"]) → {"a": 2, "b": 2, "c": 1}
-wordCount(["c", "b", "a"]) → {"a": 1, "b": 1, "c": 1}
-wordCount([wordCount(["c", "c", "c", "c"]) → {"c": 4}]) → {"c": 4}
+wordCount(["a", "b", "a", "c", "b"]) --> {"a": 2, "b": 2, "c": 1}
+wordCount(["c", "b", "a"]) --> {"a": 1, "b": 1, "c": 1}
+wordCount([wordCount(["c", "c", "c", "c"]) --> {"c": 4}]) --> {"c": 4}
  */
 public class wordCount {
 
@@ -32,7 +32,7 @@ public class wordCount {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("wordCount([\"a\", \"b\", \"a\", \"c\", \"b\"]) → {\"a\": 2, \"b\": 2, \"c\": 1}\n");
+		System.out.println("wordCount([\"a\", \"b\", \"a\", \"c\", \"b\"]) --> {\"a\": 2, \"b\": 2, \"c\": 1}\n");
 
 		//Input array
 	    String[] array =  {"a", "b", "a", "c", "b"};
@@ -51,7 +51,7 @@ public class wordCount {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("wordCount([\"c\", \"b\", \"a\"]) → {\"a\": 1, \"b\": 1, \"c\": 1}\n");
+		System.out.println("wordCount([\"c\", \"b\", \"a\"]) --> {\"a\": 1, \"b\": 1, \"c\": 1}\n");
 
 		//Input array
 	    String[] array =  {"c", "b", "a"};
@@ -70,7 +70,7 @@ public class wordCount {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("wordCount([\"c\", \"c\", \"c\", \"c\"]) → {\"c\": 4}\n");
+		System.out.println("wordCount([\"c\", \"c\", \"c\", \"c\"]) --> {\"c\": 4}\n");
 
 		//Input array
 	    String[] array =  {"c", "c", "c", "c"};

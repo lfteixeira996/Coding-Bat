@@ -20,9 +20,9 @@ Given an array of strings, return a Map<String, Boolean> where each different st
 is a key and its value is true if that string appears 2 or more times in the array.
 
 
-wordMultiple(["a", "b", "a", "c", "b"]) → {"a": true, "b": true, "c": false}
-wordMultiple(["c", "b", "a"]) → {"a": false, "b": false, "c": false}
-wordMultiple(["c", "c", "c", "c"]) → {"c": true}
+wordMultiple(["a", "b", "a", "c", "b"]) --> {"a": true, "b": true, "c": false}
+wordMultiple(["c", "b", "a"]) --> {"a": false, "b": false, "c": false}
+wordMultiple(["c", "c", "c", "c"]) --> {"c": true}
  */
 public class wordMultiple {
 
@@ -32,7 +32,7 @@ public class wordMultiple {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("wordMultiple([\"a\", \"b\", \"a\", \"c\", \"b\"]) → {\"a\": true, \"b\": true, \"c\": false}\n");
+		System.out.println("wordMultiple([\"a\", \"b\", \"a\", \"c\", \"b\"]) --> {\"a\": true, \"b\": true, \"c\": false}\n");
 
 		//Input array
 	    String[] array =  {"a", "b", "a", "c", "b"};
@@ -51,7 +51,7 @@ public class wordMultiple {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("wordMultiple([\"c\", \"b\", \"a\"]) → {\"a\": false, \"b\": false, \"c\": false}\n");
+		System.out.println("wordMultiple([\"c\", \"b\", \"a\"]) --> {\"a\": false, \"b\": false, \"c\": false}\n");
 
 		//Input array
 	    String[] array =  {"c", "b", "a"};
@@ -70,7 +70,7 @@ public class wordMultiple {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("wordMultiple([\"c\", \"c\", \"c\", \"c\"]) → {\"c\": true}\n");
+		System.out.println("wordMultiple([\"c\", \"c\", \"c\", \"c\"]) --> {\"c\": true}\n");
 
 		//Input array
 	    String[] array =  {"c", "c", "c", "c"};

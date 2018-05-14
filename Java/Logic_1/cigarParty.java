@@ -23,9 +23,9 @@ no upper bound on the number of cigars. Return true if the party with the
 given values is successful, or false otherwise.
 
 
-cigarParty(30, false) → false
-cigarParty(50, false) → true
-cigarParty(70, true) → true
+cigarParty(30, false) --> false
+cigarParty(50, false) --> true
+cigarParty(70, true) --> true
  */
 public class cigarParty {
 
@@ -35,7 +35,7 @@ public class cigarParty {
 	public void Test1()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("cigarParty(30, false) → false\n");
+		System.out.println("cigarParty(30, false) --> false\n");
 		assertEquals(false, cigarParty(30, false));
 	    i++;
 	}
@@ -44,7 +44,7 @@ public class cigarParty {
 	public void Test2()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("cigarParty(50, false) → true\n");
+		System.out.println("cigarParty(50, false) --> true\n");
 		assertEquals(true, cigarParty(50, true));
 	    i++;
 	}
@@ -53,7 +53,7 @@ public class cigarParty {
 	public void Test3()
 	{
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("cigarParty(70, true) → true\n");
+		System.out.println("cigarParty(70, true) --> true\n");
 		assertEquals(true, cigarParty(70, true));
 	    i++;
 	}

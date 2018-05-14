@@ -19,9 +19,9 @@ import org.junit.Test;
 Given a list of strings, return a list where each string is replaced by 3 copies of the string concatenated together.
 
 
-copies3(["a", "bb", "ccc"]) → ["aaa", "bbbbbb", "ccccccccc"]
-copies3(["24", "a", ""]) → ["242424", "aaa", ""]
-copies3(["hello", "there"]) → ["hellohellohello", "theretherethere"]
+copies3(["a", "bb", "ccc"]) --> ["aaa", "bbbbbb", "ccccccccc"]
+copies3(["24", "a", ""]) --> ["242424", "aaa", ""]
+copies3(["hello", "there"]) --> ["hellohellohello", "theretherethere"]
  */
 public class copies3 {
 
@@ -33,7 +33,7 @@ public class copies3 {
 	public void Test1()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("copies3([\"a\", \"bb\", \"ccc\"]) → [\"aaa\", \"bbbbbb\", \"ccccccccc\"]\n");
+		System.out.println("copies3([\"a\", \"bb\", \"ccc\"]) --> [\"aaa\", \"bbbbbb\", \"ccccccccc\"]\n");
 		
 		//actual
 		num.add("a");
@@ -45,7 +45,7 @@ public class copies3 {
 		exp.add("bbbbbb");
 		exp.add("ccccccccc");
 
-		assertEquals("doubling([1, 2, 3]) → [2, 4, 6]", exp, copies3(num));
+		assertEquals("doubling([1, 2, 3]) --> [2, 4, 6]", exp, copies3(num));
 		i++;
 	}
 
@@ -53,7 +53,7 @@ public class copies3 {
 	public void Test2()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("copies3([\"24\", \"a\", \"\"]) → [\"242424\", \"aaa\", \"\"]\n");
+		System.out.println("copies3([\"24\", \"a\", \"\"]) --> [\"242424\", \"aaa\", \"\"]\n");
 		
 		//actual
 		num.add("24");
@@ -65,7 +65,7 @@ public class copies3 {
 		exp.add("aaa");
 		exp.add("");
 
-		assertEquals("copies3([\"24\", \"a\", \"\"]) → [\"242424\", \"aaa\", \"\"]", exp, copies3(num));
+		assertEquals("copies3([\"24\", \"a\", \"\"]) --> [\"242424\", \"aaa\", \"\"]", exp, copies3(num));
 		i++;
 	}
 	
@@ -73,7 +73,7 @@ public class copies3 {
 	public void Test3()
 	{	
 		System.out.println("**********Test "+i+"**********");
-		System.out.println("copies3([\"hello\", \"there\"]) → [\"hellohellohello\", \"theretherethere\"]\n");
+		System.out.println("copies3([\"hello\", \"there\"]) --> [\"hellohellohello\", \"theretherethere\"]\n");
 		
 		//actual
 		num.add("hello");
@@ -83,7 +83,7 @@ public class copies3 {
 		exp.add("hellohellohello");
 		exp.add("theretherethere");
 
-		assertEquals("copies3([\"hello\", \"there\"]) → [\"hellohellohello\", \"theretherethere\"]", exp, copies3(num));
+		assertEquals("copies3([\"hello\", \"there\"]) --> [\"hellohellohello\", \"theretherethere\"]", exp, copies3(num));
 		i++;
 	}
 	
