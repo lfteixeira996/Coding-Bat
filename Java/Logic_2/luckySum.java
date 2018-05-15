@@ -55,7 +55,25 @@ public class luckySum {
 	
 	public int luckySum(int a, int b, int c) {
 	
+		int sum = 0;
+		int[] array = {a, b, c};
 		
-		
+		for (int i : array) {
+			
+			if (!checkIf13(i)) {
+				sum += i;
+			}
+			
+			else {
+				break;
+			}
+		}		
+		return sum;
+	}
+	
+	
+	public boolean checkIf13(int x) {
+
+		return (x==13);
 	}
 }

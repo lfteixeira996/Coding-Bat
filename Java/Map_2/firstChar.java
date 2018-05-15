@@ -87,16 +87,22 @@ public class firstChar {
 		Map ret = new HashMap(); 
 		char arr, map;
 		
-		for (int i = 0; i < strings.length; i++) {
+		for (String itr : strings) {
 			
-			arr = strings[i].charAt(0);
+			String key = " "+ itr.charAt(0);
 			
-			if (ret.) {
-				ret.put(strings[i], strings[i].length());
+			if (ret.containsKey(key)) {
+				ret.put(key, ret.get(key)+itr);
+				
+			}
+			
+			else {
+				ret.put(key, itr);
 			}
 			
 		}
 		
+		return ret;		
 	}
 
 }
