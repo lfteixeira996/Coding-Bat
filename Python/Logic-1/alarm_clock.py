@@ -17,17 +17,17 @@ alarm_clock(0, False) -> '10:00'
 
 def alarm_clock(day, vacation):
   
- if vacation and (day==0 or day==6):
-  return 'off'
+    if vacation and (day==0 or day==6):
+        return 'off'
   
- elif vacation and (day>=1 or day<=5):
-  return '10:00' 
+    elif vacation and (day>=1 or day<=5):
+        return '10:00' 
   
- elif day==0 or day==6:
-  return '10:00'
+    elif day==0 or day==6:
+        return '10:00'
   
- else:
-  return '7:00'
+    else:
+        return '7:00'
    
  
 class Test_alarm_clock(unittest.TestCase):

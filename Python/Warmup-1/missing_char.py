@@ -14,9 +14,11 @@ missing_char('kitten', 4) -> 'kittn'
 '''
 
 def missing_char(str, n):
-  front = str[:n]   # up to but not including n
-  back = str[n+1:]  # n+1 through end of string
-  return front + back 
+  
+    front = str[:n]   # up to but not including n
+    back = str[n+1:]  # n+1 through end of string
+  
+    return front + back 
 
 
 class Test_missing_char(unittest.TestCase):

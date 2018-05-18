@@ -1,3 +1,5 @@
+import unittest
+
 '''
 
 Return the "centered" average of an array of ints, 
@@ -42,35 +44,48 @@ def min_val(nums):
 #Centered Average
 def centered_average(nums):
   
-   find_max = False
-   find_min = False
-   maxval   = max_val(nums)
-   minval   = min_val(nums)
-   num      = 0
-   den = 0
+    find_max = False
+    find_min = False
+    maxval   = max_val(nums)
+    minval   = min_val(nums)
+    num      = 0
+    den = 0
    
-   for item in nums:
+    for item in nums:
        
-       if item != maxval and item != minval:
-           num += item
-           den += 1
+        if item != maxval and item != minval:
+            num += item
+            den += 1
        
-       if item == maxval and find_max == True:
-           num += item
-           den += 1
+        if item == maxval and find_max == True:
+            num += item
+            den += 1
 
-       if item == minval and find_min == True:
-           num += item
-           den += 1           
+        if item == minval and find_min == True:
+            num += item
+            den += 1           
         
-        
-       if item == maxval and find_max == False:
-           find_max = True
+        if item == maxval and find_max == False:
+            find_max = True
            
-       if item == minval and find_min == False:
-           find_min = True
+        if item == minval and find_min == False:
+            find_min = True
                
       
-   return num//den     
+    return num//den     
    
-           
+   
+class Test_centered_average(unittest.TestCase):
+
+    def test_1(self):
+        self.assertEqual(centered_average([1, 2, 3, 4, 100]), 3)
+
+    def test_2(self):
+        self.assertEqual(centered_average([1, 1, 5, 5, 10, 8, 7]), 5)
+
+    def test_3(self):
+        self.assertEqual(centered_average([-10, -4, -2, -4, -2, 0]), -3)
+
+
+if __name__ == '__main__':
+    unittest.main()            

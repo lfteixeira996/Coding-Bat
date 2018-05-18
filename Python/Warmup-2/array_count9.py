@@ -10,17 +10,17 @@ array_count9([1, 9, 9, 3, 9]) -> 3
 
 def array_count9(nums):
   
- count = 0
- if len(nums) == 0:
-  return 0
+    count = 0
+    if len(nums) == 0:
+        return 0
   
- else:
-  for i in range(len(nums)):
-    if nums[i]== 9:
-     count=count+1
+    else:
+        for i in range(len(nums)):
+            if nums[i]== 9:
+                count=count+1
      
      
- return count        
+    return count        
  
  
 class Test_array_count9(unittest.TestCase):

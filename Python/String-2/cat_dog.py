@@ -1,3 +1,5 @@
+import  unittest
+
 '''
 
 Return True if the string "cat" and "dog" appear 
@@ -27,4 +29,19 @@ def cat_dog(str):
     
     else:
         return False
+ 
     
+class Test_cat_dog(unittest.TestCase):
+
+    def test_1(self):
+        self.assertEqual(cat_dog('catdog'), True)
+
+    def test_2(self):
+        self.assertEqual(cat_dog('catcat'), False)
+
+    def test_3(self):
+        self.assertEqual(cat_dog('1cat1cadodog'), True)
+
+
+if __name__ == '__main__':
+    unittest.main()      

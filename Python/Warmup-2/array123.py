@@ -12,11 +12,11 @@ array123([1, 1, 2, 1, 2, 3]) -> True
 
 def array123(nums):
   
- for i in range(len(nums)):
-  if (i<len(nums)-2)and nums[i]==1 and nums[i+1]==2 and nums[i+2]==3:
-   return True
+    for i in range(len(nums)):
+        if (i<len(nums)-2)and nums[i]==1 and nums[i+1]==2 and nums[i+2]==3:
+            return True
   
- return False  
+    return False  
  
  
  

@@ -13,7 +13,6 @@ last2('axxxaaxx') -> 2
 '''
 
 def last2(str):
-  
 
 
 

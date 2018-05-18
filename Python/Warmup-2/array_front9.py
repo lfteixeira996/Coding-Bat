@@ -9,17 +9,17 @@ array_front9([1, 2, 3, 4, 5]) -> False
 
 def array_front9(nums):
  
- if len(nums)>4:
-  for i in range(0,4):
-   if nums[i] == 9:
-    return True   
+    if len(nums)>4:
+        for i in range(0,4):
+            if nums[i] == 9:
+                return True   
  
- else:
-  for i in range(0,len(nums)):
-   if nums[i] == 9:
-    return True 
+    else:
+        for i in range(0,len(nums)):
+            if nums[i] == 9:
+                return True 
  
- return False      
+        return False      
  
  
  

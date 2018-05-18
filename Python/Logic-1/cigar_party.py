@@ -17,13 +17,13 @@ cigar_party(70, True) -> True
 
 def cigar_party(cigars, is_weekend):
   
- if cigars>=40 and is_weekend:
-  return True
+    if cigars>=40 and is_weekend:
+        return True
   
- elif cigars>=40 and cigars<=60 and not is_weekend:
-  return True
+    elif cigars>=40 and cigars<=60 and not is_weekend:
+        return True
   
- return False  
+    return False  
 
 
 class Test_cigar_party(unittest.TestCase):

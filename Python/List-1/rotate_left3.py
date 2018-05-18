@@ -13,7 +13,7 @@ rotate_left3([7, 0, 0]) -> [0, 0, 7]
 
 def rotate_left3(nums):
   
- return [nums[1], nums[2], nums[0]]
+    return [nums[1], nums[2], nums[0]]
  
  
 class Test_rotate_left3(unittest.TestCase):

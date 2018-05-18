@@ -13,11 +13,11 @@ front_times('Abc', 3) -> 'AbcAbcAbc'
 
 def front_times(str, n):
   
- if n>0 and len(str)>=1:
-  return n*str[:3]
+    if n>0 and len(str)>=1:
+        return n*str[:3]
   
- elif n==0 or len(str)==0:
-  return ''           
+    elif n==0 or len(str)==0:
+        return ''           
 
 
  class Test_front_times(unittest.TestCase):

@@ -19,23 +19,23 @@ caught_speeding(65, True) -> 0
 
 def caught_speeding(speed, is_birthday):
   
- if not is_birthday and speed <= 60:
-  return 0
+    if not is_birthday and speed <= 60:
+        return 0
   
- elif not is_birthday and speed>60 and speed<=80:
-  return 1
+    elif not is_birthday and speed>60 and speed<=80:
+        return 1
   
- elif not is_birthday and speed>=81:
-  return 2
+    elif not is_birthday and speed>=81:
+        return 2
   
- elif is_birthday and speed <= 65:
-  return 0
+    elif is_birthday and speed <= 65:
+        return 0
   
- elif is_birthday and speed>65 and speed<=85:
-  return 1
+    elif is_birthday and speed>65 and speed<=85:
+        return 1
   
- elif is_birthday and speed>=86:
-  return 2
+    elif is_birthday and speed>=86:
+        return 2
   
   
 class Test_caught_speeding(unittest.TestCase):

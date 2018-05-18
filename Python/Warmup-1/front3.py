@@ -12,12 +12,14 @@ front3('abc')          -> 'abcabcabc'
 '''
 
 def front3(str):
- if len(str)<1:
-  return str
+ 
+    if len(str)<1:
+        return str
   
- else:
-  char3 = str[0:3]
-  return 3*char3
+    else:
+        char3 = str[0:3]
+  
+    return 3*char3
       
 
 

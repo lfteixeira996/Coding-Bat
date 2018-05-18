@@ -12,14 +12,14 @@ string_splosion('ab') -> 'aab'
 
 def string_splosion(str):
   
- res = ''
- x = 0
+    res = ''
+    x = 0
  
- for x in range(0,len(str)):  
-  res = res +str[:x]
+    for x in range(0,len(str)):  
+        res = res +str[:x]
  
- return res + str
  
+    return res + str
  
  
 class Test_string_splosion(unittest.TestCase):

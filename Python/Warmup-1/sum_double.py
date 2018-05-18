@@ -11,9 +11,11 @@ sum_double(2, 2) -> 8
 '''
 
 def sum_double(a, b):
-  if a == b:
-    return 2*(a+b)  
-  return a + b
+  
+    if a == b:
+        return 2*(a+b)  
+  
+    return a + b
  
  
 class Test_sum_double(unittest.TestCase):

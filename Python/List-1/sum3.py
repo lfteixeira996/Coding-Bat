@@ -12,12 +12,12 @@ sum3([7, 0, 0]) -> 7
 
 def sum3(nums):
   
- val = 0 
+    val = 0 
  
- for i in range(0,3):
-  val = val + nums[i]
+    for i in range(0,3):
+        val = val + nums[i]
   
- return val  
+    return val  
  
  
 class Test_sum3(unittest.TestCase):

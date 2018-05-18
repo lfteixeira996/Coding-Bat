@@ -13,11 +13,11 @@ string_times('Hi', 1) -> 'Hi'
 def string_times(str, n):
   
   
- if n > 0 and len(str)>0:
-  return n*str
+    if n > 0 and len(str)>0:
+        return n*str
  
- elif n==0 or len(str)==0: 
-  return "" 
+    elif n==0 or len(str)==0: 
+        return "" 
 
 
 class Test_string_times(unittest.TestCase):

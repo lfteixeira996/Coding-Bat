@@ -11,16 +11,16 @@ sum2([1, 1, 1, 1]) -> 2
 
 def sum2(nums):
   
- lenght = len(nums)
+    lenght = len(nums)
  
- if lenght == 0:
-  return 0
+    if lenght == 0:
+        return 0
   
- elif  lenght < 2:
-  return nums[0]
+    elif  lenght < 2:
+        return nums[0]
   
- elif  lenght >= 2:
-  return nums[0]+ nums[1]
+    elif  lenght >= 2:
+        return nums[0]+ nums[1]
    
 class Test_sum2(unittest.TestCase):
 

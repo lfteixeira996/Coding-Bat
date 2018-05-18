@@ -14,19 +14,19 @@ in1to10(11, True) -> True
 
 def in1to10(n, outside_mode):
   
- if not outside_mode:
+    if not outside_mode:
  
-  if n>=1 and n<=10:
-   return True
+        if n>=1 and n<=10:
+            return True
    
-  return False
+    return False
   
- else:
+    else:
  
-  if n>1 and n<10:
-   return False
+        if n>1 and n<10:
+            return False
    
-  return True
+    return True
   
 class Test_in1to10(unittest.TestCase):
 

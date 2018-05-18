@@ -14,20 +14,20 @@ max_end3([2, 11, 3]) -> [3, 3, 3]
 
 def max_end3(nums):
  
- max = 0 
- if nums[0]>nums[2]:
-  max = nums[0]
+    max = 0 
+    if nums[0]>nums[2]:
+        max = nums[0]
   
- elif nums[0]<=nums[2]:
-  max = nums[2]
+    elif nums[0]<=nums[2]:
+        max = nums[2]
  
   
- for i in range(0,3):
-  nums[i] = max  
+    for i in range(0,3):
+        nums[i] = max  
 
- return nums  
+    return nums  
  
-class Test_make_ends(unittest.TestCase):
+class Test_make_end3(unittest.TestCase):
 
     def test_1(self):
         self.assertEqual(make_ends([1, 2, 3]), [1, 3])
