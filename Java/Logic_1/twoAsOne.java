@@ -22,7 +22,7 @@ twoAsOne(3, 2, 2) --> false
  */
 public class twoAsOne {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

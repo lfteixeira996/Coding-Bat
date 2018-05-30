@@ -23,7 +23,7 @@ in3050(40, 50) --> true
  */
 public class in3050 {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

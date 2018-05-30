@@ -21,7 +21,7 @@ fix23([1, 2, 1]) --> [1, 2, 1]
  */
 public class fix23 {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

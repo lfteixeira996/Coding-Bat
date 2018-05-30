@@ -21,7 +21,7 @@ countEvens([1, 3, 5]) --> 0
  */
 public class countEvens {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

@@ -23,7 +23,7 @@ lastDigit(23, 19, 3) --> true
  */
 public class lastDigit {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

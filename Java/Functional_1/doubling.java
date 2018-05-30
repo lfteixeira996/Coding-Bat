@@ -24,7 +24,7 @@ doubling([]) --> []
  */
 public class doubling {
 
-	private static int i = 0;
+	private static int i = 1;
 	List<Integer> num = new LinkedList<Integer>();
 	List<Integer> exp = new LinkedList<Integer>();
 	

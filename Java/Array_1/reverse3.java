@@ -22,7 +22,7 @@ reverse3([7, 0, 0]) --> [0, 0, 7]
  */
 public class reverse3 {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

@@ -29,7 +29,7 @@ cigarParty(70, true) --> true
  */
 public class cigarParty {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

@@ -25,7 +25,7 @@ noYY(["xx", "ya", "zz"]) --> ["xxy", "yay", "zzy"]
  */
 public class noYY {
 
-	private static int i = 0;
+	private static int i = 1;
 	List<String> num = new LinkedList<String>();
 	List<String> exp = new LinkedList<String>();
 	

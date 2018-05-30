@@ -23,7 +23,7 @@ copyEvens([6, 1, 2, 4, 5, 8], 3) --> [6, 2, 4]
  */
 public class copyEvens {
 
-	private static int counter=1;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

@@ -25,7 +25,7 @@ commonEnd([1, 2, 3], [1, 3]) --> true
  */
 public class commonEnd {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

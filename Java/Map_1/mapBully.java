@@ -27,7 +27,7 @@ mapBully({"a": "candy", "b": "carrot", "c": "meh"}) --> {"a": "", "b": "candy", 
  */
 public class mapBully {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

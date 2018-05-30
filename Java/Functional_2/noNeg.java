@@ -23,7 +23,7 @@ noNeg([-1, -1, -1]) --> []
  */
 public class noNeg {
 
-	private static int i = 0;
+	private static int i = 1;
 	List<Integer> num = new LinkedList<Integer>();
 	List<Integer> exp = new LinkedList<Integer>();
 	

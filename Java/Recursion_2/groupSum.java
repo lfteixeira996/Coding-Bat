@@ -28,7 +28,7 @@ groupSum(0, [2, 4, 8], 9) --> false
  */
 public class groupSum {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

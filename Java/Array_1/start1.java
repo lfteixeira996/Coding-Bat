@@ -13,7 +13,8 @@ import org.junit.Test;
 
 /**
 
-Start with 2 int arrays, a and b, of any length. Return how many of the arrays have 1 as their first element.
+Start with 2 int arrays, a and b, of any length. 
+Return how many of the arrays have 1 as their first element.
 
 
 start1([1, 2, 3], [1, 3]) --> 2
@@ -22,7 +23,7 @@ start1([1, 2], []) --> 1
  */
 public class start1 {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()
@@ -70,13 +71,19 @@ public class start1 {
 	
 		int aux = 0;
 		
-		if (a[0] == 1 && a.length !=0) {
-			aux++;
+		if (a.length != 0) {
+			if (a[0] == 1) {
+				aux++;
+			}
 		}
 		
-		if (b[0] == 1 && b.length !=0) {
-			aux++;
+		
+		if (b.length != 0) {
+			if (b[0] == 1) {
+				aux++;
+			}
 		}
+		
 		
 		return aux;
 	}

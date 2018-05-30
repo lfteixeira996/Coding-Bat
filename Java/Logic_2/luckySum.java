@@ -24,7 +24,7 @@ luckySum(1, 13, 3) --> 1
  */
 public class luckySum {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

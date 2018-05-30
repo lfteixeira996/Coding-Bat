@@ -23,7 +23,7 @@ monkeyTrouble(true, false) --> false
  */
 public class monkeyTrouble {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

@@ -26,7 +26,7 @@ mapShare({"a": "aaa", "c": "meh", "d": "hi"}) --> {"a": "aaa", "b": "aaa", "d": 
  */
 public class mapShare {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

@@ -23,7 +23,7 @@ seeColor("blueTimes") --> "blue"
  */
 public class seeColor {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

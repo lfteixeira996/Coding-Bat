@@ -25,7 +25,7 @@ wordLen(["code", "code", "code", "bug"]) --> {"code": 4, "bug": 3}
  */
 public class wordLen {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

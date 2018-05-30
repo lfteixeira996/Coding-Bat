@@ -26,7 +26,7 @@ wordCount([wordCount(["c", "c", "c", "c"]) --> {"c": 4}]) --> {"c": 4}
  */
 public class wordCount {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

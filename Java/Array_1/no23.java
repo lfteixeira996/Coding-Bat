@@ -21,7 +21,7 @@ no23([3, 5]) --> false
  */
 public class no23 {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

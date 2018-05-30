@@ -23,7 +23,7 @@ teenSum(13, 2) --> 19
  */
 public class teenSum {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

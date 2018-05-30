@@ -22,7 +22,7 @@ helloName("X") --> "Hello X!"
  */
 public class helloName {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

@@ -25,7 +25,7 @@ noTeenSum(2, 1, 14) --> 3
  */
 public class noTeenSum {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

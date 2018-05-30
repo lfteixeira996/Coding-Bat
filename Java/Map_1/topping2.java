@@ -26,7 +26,7 @@ topping2({"yogurt": "salt"}) --> {"yogurt": "salt"}
  */
 public class topping2 {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

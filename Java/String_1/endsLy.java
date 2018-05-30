@@ -21,7 +21,7 @@ endsLy("oddy") --> false
  */
 public class endsLy {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

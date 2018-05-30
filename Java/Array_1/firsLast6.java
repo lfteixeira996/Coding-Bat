@@ -22,7 +22,7 @@ firstLast6([13, 6, 1, 2, 3]) --> false
  */
 public class firsLast6 {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

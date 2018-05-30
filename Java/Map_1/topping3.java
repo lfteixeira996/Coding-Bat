@@ -27,7 +27,7 @@ topping3({"salad": "oil", "potato": "ketchup"}) --> {"spinach": "oil", "salad": 
  */
 public class topping3 {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

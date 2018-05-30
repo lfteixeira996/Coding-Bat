@@ -26,7 +26,7 @@ wordMultiple(["c", "c", "c", "c"]) --> {"c": true}
  */
 public class wordMultiple {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

@@ -26,7 +26,7 @@ topping1({"pancake": "syrup"}) --> {"bread": "butter", "pancake": "syrup"}
  */
 public class topping1 {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

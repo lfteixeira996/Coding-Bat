@@ -26,7 +26,7 @@ midThree([1, 2, 3]) --> [1, 2, 3]
  */
 public class midThree {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

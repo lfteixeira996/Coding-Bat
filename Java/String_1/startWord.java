@@ -26,7 +26,7 @@ startWord("hippo", "i") --> "h"
  */
 public class startWord {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

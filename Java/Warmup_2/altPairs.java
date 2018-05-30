@@ -13,7 +13,7 @@ import org.junit.Test;
 
 /**
 
-Given a string, return a string made of the chars at indexes 0,1, 4,5, 8,9 ... so "kittens" yields "kien".
+Given a string, return a string made of the chars at indexes 0,1,4,5,8,9 ... so "kittens" yields "kien".
 
 
 altPairs("kitten") --> "kien"
@@ -65,6 +65,20 @@ public class altPairs {
 	
 	
 	public String altPairs(String str) {
-		  
+		
+		String ret = "";
+		int i = 0;
+		
+		for (char ch : str.toCharArray()) {
+			
+			System.out.println(ch);
+			if(i%2 != 0)
+			{
+				ret = ret+ch;
+			}
+			i++;
+		}
+		
+		return ret;
 	}
 }

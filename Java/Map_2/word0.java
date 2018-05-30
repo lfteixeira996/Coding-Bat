@@ -26,7 +26,7 @@ word0(["c", "b", "a"]) --> {"a": 0, "b": 0, "c": 0}
  */
 public class word0 {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

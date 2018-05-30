@@ -24,7 +24,7 @@ love6(1, 5) --> true
  */
 public class love6 {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

@@ -24,7 +24,7 @@ sumDigits("Chocolate") --> 0
  */
 public class sumDigits {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

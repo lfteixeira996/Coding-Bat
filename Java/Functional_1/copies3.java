@@ -25,7 +25,7 @@ copies3(["hello", "there"]) --> ["hellohellohello", "theretherethere"]
  */
 public class copies3 {
 
-	private static int i = 0;
+	private static int i = 1;
 	List<String> num = new LinkedList<String>();
 	List<String> exp = new LinkedList<String>();
 	

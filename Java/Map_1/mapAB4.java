@@ -27,7 +27,7 @@ mapAB4({"a": "aa", "b": "bbb"}) --> {"a": "aa", "b": "bbb", "c": "bbb"}
  */
 public class mapAB4 {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()

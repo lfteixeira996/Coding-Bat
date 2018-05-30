@@ -21,7 +21,7 @@ scoresIncreasing([1, 1, 4]) --> true
  */
 public class scoresIncreasing {
 
-	private static int i = 0;
+	private static int i = 1;
 	
 	@Test
 	public void Test1()
