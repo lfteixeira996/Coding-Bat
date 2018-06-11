@@ -68,15 +68,22 @@ public class altPairs {
 		
 		String ret = "";
 		int i = 0;
+		boolean flag = true;
 		
 		for (char ch : str.toCharArray()) {
 			
-			System.out.println(ch);
-			if(i%2 != 0)
-			{
+			if (flag) {
 				ret = ret+ch;
+				i++;
+				flag = false;
+				break;
 			}
-			i++;
+
+			else
+			{
+				i = i+2;
+				flag = true;
+			}
 		}
 		
 		return ret;

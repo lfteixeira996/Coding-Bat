@@ -53,22 +53,18 @@ public class everyNth{
 	/*****************************************/
 	public String everyNth(String str, int n) {
 		  
-		int x = 0;
-		int z = 0;
-		char array[] = new char[str.length()];
+		int i = 0;
+		String ret = "";
+	
+		for (char index : str.toCharArray()) {
 		
-		while (x < str.length()) 
-		{
-			array[z] = str.charAt(x);
-			x = x+n;
-			z++;				
+			if (i%n==0) {
+				ret = ret+index;
+			}
+			i++;
 		}
-			
-		
-		
-		array[z] = '\n';
-		System.out.println(array.toString());
-		return array.toString();		
+	
+		return ret;
 	}
 }	
 
